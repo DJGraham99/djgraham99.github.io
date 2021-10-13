@@ -1,10 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+    </style>
     <meta charset="UTF-8">
-    <title>DYLAN PORTFOLIO</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Title</title>
 </head>
+
+
 <body>
+
+<nav>
+    <div class="links">
+        <ul>
+            <li> Social </li>
+            <li> <img src="images/linkImage.png">  </li>
+        </ul>
+
+        <ul id="sections">
+            <li> Link </li>
+            <li> <img src="images/code.png"> </li>
+            <li> <img src="images/briefcase.png"> </li>
+            <li> <img src="images/graduationcap.png"> </li>
+            <li> <img src="images/books.png"> </li>
+            <li> <img src="images/light.png"> </li>
+            <li> <a href="#sec_about"> <img src="images/person.png"> </a> </li>
+
+
+        </ul>
+
+        <img id="rightarrow" src="images/rightarrow.png">
+    </div>
+</nav>
+
+<section id="welcome">
+    <h1> Dylan Graham </h1>
+    <h2> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
+    software engineering. Please enjoy browsing! </h2>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</section>
+
+<button id="explorebutton" onclick="welcomeButton()">
+    <h2> Explore </h2>
+    <img src="images/downarrow.png">
+</button>
+
+<section id="notIntro">
+
+    <section id="skills">
+
+        <h1> Key Skills </h1>
+
+        <div class = "carousel">
+            <figure>
+                <div id="compon">   </div>
+                <div id="compon">   </div>
+                <div id="compon">   </div>
+                <div id="compon">   </div>
+                <div id="compon">   </div>
+
+            </figure>
+
+            <nav>
+                <button class="nav prev">Prev</button>
+                <button class="nav next">Next</button>
+            </nav>
+        </div>
+
+
+
+
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+<script>
+
+    var
+        carousel = document.querySelector('.carousel'),
+        figure = carousel.querySelector('figure'),
+        nav = carousel.querySelector('nav'),
+        numImages = figure.childElementCount,
+        theta =  2 * Math.PI / numImages,
+        currImage = 0
+    imageTracker = 1;
+    img=carousel.querySelector('div')
+    ;
+
+    nav.addEventListener('click', onClick, true);
+    function onClick(e) {
+        e.stopPropagation();
+
+        var t = e.target;
+
+        if (t.classList.contains('next')) {
+            currImage++;
+        }
+        else {
+            currImage--;
+        }
+
+
+        figure.style.transform = `rotateY(${currImage * -theta}rad)`;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function welcomeButton(){
+        var x = document.getElementById("welcome");
+        var y =  document.getElementById("explorebutton")
+        var z = document.getElementById("notIntro")
+        if (x.style.display==="none"){
+            z.style.display="none";
+            x.style.display="block";
+            x.scrollIntoView({behavior:"smooth"})
+        }
+        else{
+            z.scrollIntoView({behavior: 'smooth'})
+            z.style.display="block";
+            x.style.display = "none";
+            y.style.display="none";
+        }
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<section id="sec_about">
+<div class="typewriter">
+    <h1>About Me</h1>
+</div>
+
+<div class="bodymain">
+
+
+
+
+    <div class="contactinfo">
+
+        <p>
+            I am currently due to finish my Msc in September so I am looking for a role in software engineering or something
+            similar between now and then. If you have any opportunities please let me know using the information below. </p>
+        <p> Thanks for taking the time to view my portfolio! </p>
+        <br>
+        <br>
+
+
+
+        <h2> Contact Information </h2>
+        <p> Contact Number: <b> 07387382553 </b> </p>
+        <p> Email Address: <b>dylanjosephgraham@gmail.com</b></p>
+
+
+    </div>
+
+</div>
+
+<div class="topimage">
+    <img src="images/newcastle.png">
+</div>
+
+</section>
+</section>
+
 
 </body>
 </html>
