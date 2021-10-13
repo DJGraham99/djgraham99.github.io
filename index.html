@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
     </style>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
     <title>Title</title>
 </head>
 
@@ -42,42 +50,134 @@
     <h2> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
     software engineering. Please enjoy browsing! </h2>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-
+    <button id="explorebutton" onclick="welcomeButton()">
+        <h2> Explore </h2>
+        <i class="fas fa-arrow-down largeIcon"></i>
+    </button>
 
 </section>
 
-<button id="explorebutton" onclick="welcomeButton()">
-    <h2> Explore </h2>
-    <i class="fas fa-arrow-down largeIcon"></i>
-</button>
-
 <div id="notIntro">
 
-    <section id="skills">
+    <button id="minimiseButton" onclick="welcomeButton()">
+        <i class="fas fa-arrow-up largeIcon"></i>
+        <h2> Welcome Page </h2>
+    </button>
 
-        <button id="minimiseButton" onclick="welcomeButton()">
-            <i class="fas fa-arrow-up largeIcon"></i>
-            <h2> Welcome Page </h2>
-        </button>
+
+    <section id="education">
+        <h1> Education </h1>
+
+        <div class="container" id="educationContainer">
+            <br>
+            <div class="row">
+                <div class="col-6">
+                    <h4> Computer Science MSc / Distinction (Predicted) </h4>
+                    <h5> Newcastle University / Sep 2020 - Oct 2021 </h5>
+                    <p id="modules"> Modules: <br>
+                        Introduction to Software Development <br>
+                        Software Development Techniques and Tools <br>
+                        Professional skills and Portfolio <br>
+                        Software Development Advanced Techniques <br>
+                        Cybersecurity <br>
+                        Advanced Programming <br>
+                        Database Systems <br>
+                        Web Technologies <br>
+                        Software Engineering and Team Project <br>
+                        Computer Networks <br>
+                        Human-Computer Interaction <br>
+                        Project and Dissertation for MSc Computer Science <br>
+                    </p>
+                    <h5> Thesis: Northumberland Rock Art Project </h5>
+                    <p> Worked with a local client to create an online website that would allow users to search a
+                        database filled with rock art data and display the data in a user-friendly manner.</p>
+
+                    <div class="row">
+                        <p class="tagger"> Pair programming </p>
+                        <p class="tagger"> Object-orientated programming </p>
+                        <p class="tagger"> CSS </p>
+                        <p class="tagger"> HTML </p>
+                        <p class="tagger"> PHP </p>
+                        <p class="tagger"> Java </p>
+                        <p class="tagger"> JavaScript </p>
+                        <p class="tagger"> Agile </p>
+                    </div>
+
+
+                </div>
+
+                <div class="col-6">
+                    <h4> Geography and Archaeology BA / 2:1 Honours </h4>
+                    <h5> University of Nottingham / Sep 2017 - Sep 2020 </h5>
+                    <h5> Thesis: An Investigation into the Relationship Between Roadside Emissions and Avian Populations </h5>
+                    <p> Third-party data was used to analyse bird populations in relation to road networks. This was done
+                        by creating species-diversity graphs using logistic regression and geo-spatially mapping populations using GIS.</p>
+                    <div class="row">
+                        <p class="tagger"> R Programming </p>
+                        <p class="tagger"> Mathematical aptitude </p>
+                        <p class="tagger"> Creativity </p>
+                        <p class="tagger"> Report writing </p>
+                        <p class="tagger"> Social awareness </p>
+                        <p class="tagger"> Time management </p>
+                        <p class="tagger"> Problem-solving skills </p>
+                        <p class="tagger"> Perspective-taking </p>
+                    </div>
+
+                    <br><br>
+                    <div>
+                    <h4> A-levels and GCSEs </h4>
+                    <p> A-Levels: Mathematics, Biology, Geography </p>
+                    <p> GCSEs: 11 A*-C including Mathematics and English </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section id="skills">
 
         <h1> Key Skills </h1>
 
         <div class = "carousel">
             <figure>
-                <div id="compon">   </div>
-                <div id="compon">   </div>
-                <div id="compon">   </div>
-                <div id="compon">   </div>
-                <div id="compon">   </div>
+                <div id="compon">
+                <h2> Coding </h2>
+                <p></p>
+                </div>
+
+                    <div id="compon">
+                        <h2> Tools Used </h2>
+                    </div>
+                <div id="compon">
+                <h2> Soft Skills </h2>
+                </div>
+
+                <div id="compon">
+                <h2> Developing my Skills </h2>
+                </div>
+
+                <div id="compon">
+                <h2> General Skills </h2>
+                </div>
 
             </figure>
 
             <nav>
-                <button class="nav prev">Prev</button>
-                <button class="nav next">Next</button>
+                <button class="nav prev noBackground"> <i class="fas fa-angle-left largeIcon"></i> </button>
+                <button class="nav next noBackground"><i class="fas fa-angle-right largeIcon"></i></button>
             </nav>
         </div>
 
@@ -87,9 +187,7 @@
     </section>
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
+    <br>
 
 
 
