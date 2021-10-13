@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
     </style>
@@ -14,24 +15,25 @@
 
 <nav>
     <div class="links">
-        <ul>
-            <li> Social </li>
-            <li> <img src="/images/linkImage.png">  </li>
-        </ul>
 
         <ul id="sections">
             <li> Link </li>
-            <li> <img src="/images/code.png"> </li>
-            <li> <img src="/images/briefcase.png"> </li>
-            <li> <img src="/images/graduationcap.png"> </li>
-            <li> <img src="/images/books.png"> </li>
-            <li> <img src="/images/light.png"> </li>
-            <li> <a href="#sec_about"> <img src="/images/person.png"> </a> </li>
+            <li onclick="welcomeButton()"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i> </li>
+            <li> <i class="fas fa-laptop-code mediumIcon"></i> </li>
+            <li> <i class="fas fa-briefcase mediumIcon"></i> </li>
+            <li> <i class="fas fa-graduation-cap mediumIcon"></i> </li>
+            <li> <i class="fas fa-book mediumIcon"></i> </li>
+            <li> <a href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i> </a> </li>
+            <li> <a href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i> </a> </li>
 
 
         </ul>
 
-        <img id="rightarrow" src="images/rightarrow.png">
+        <ul>
+            <li> Social </li>
+            <li> <i class="fab fa-linkedin mediumIcon"></i> </li>
+        </ul>
+
     </div>
 </nav>
 
@@ -49,12 +51,17 @@
 
 <button id="explorebutton" onclick="welcomeButton()">
     <h2> Explore </h2>
-    <img src="images/downarrow.png">
+    <i class="fas fa-arrow-down largeIcon"></i>
 </button>
 
-<section id="notIntro">
+<div id="notIntro">
 
     <section id="skills">
+
+        <button id="minimiseButton" onclick="welcomeButton()">
+            <i class="fas fa-arrow-up largeIcon"></i>
+            <h2> Welcome Page </h2>
+        </button>
 
         <h1> Key Skills </h1>
 
@@ -89,6 +96,24 @@
 
 
 <script>
+//In progress to highlight sections when scrolling through them
+/*    window.onscroll = function(){ scrollFunction(); }
+
+
+
+
+
+    function scrollFunction(){
+
+        let sections = document.getElementsByTagName('section');
+        // tracks index of current section
+        for(var i=0; i<sections.length; i++){
+            eval("var variable" + i + " = " + sections[i].offsetTop);
+        }
+    }*/
+
+
+
 
     var
         carousel = document.querySelector('.carousel'),
@@ -120,22 +145,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     function welcomeButton(){
         var x = document.getElementById("welcome");
         var y =  document.getElementById("explorebutton")
@@ -143,6 +152,7 @@
         if (x.style.display==="none"){
             z.style.display="none";
             x.style.display="block";
+            y.style.display="block";
             x.scrollIntoView({behavior:"smooth"})
         }
         else{
@@ -201,7 +211,7 @@
 </div>
 
 </section>
-</section>
+</div>
 
 
 </body>

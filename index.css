@@ -37,14 +37,18 @@ nav ul{
 }
 
 nav li{
-
+    display: grid;
     margin: 1em 0;
     height: 3em;
     width: 3em;
     text-align: center;
-    line-height: 3em;
     border: black solid 2px;
     border-radius: 30px;
+    align-items: center;
+}
+
+a{
+    color: black;
 }
 
 nav li:nth-child(1){
@@ -58,9 +62,6 @@ nav li:nth-child(1):hover{
 }
 
 
-#sections{
-    position: absolute;
-}
 
 nav li:hover{
     width: 3.2em;
@@ -100,28 +101,35 @@ nav img{
     margin-top: 0;
 }
 
-#explorebutton{
+#explorebutton, #minimiseButton{
     opacity: 100%;
     background: none;
     border: 2px solid black;
     padding: 3px 2em;
     border-radius: 100px;
+    margin: auto;
 }
 
-#explorebutton:hover{
+#minimiseButton{
+    border: none;
+}
+
+#explorebutton:hover, #minimiseButton:hover{
     transition: opacity .5s ease-out;
     opacity: 40%;
-}
-
-#explorebutton img{
-    width: 5em;
 }
 
 #notIntro{
     display: none;
 }
 
+.largeIcon{
+    font-size: 500%;
+}
 
+.mediumIcon{
+    font-size: 200%;
+}
 
 
 
