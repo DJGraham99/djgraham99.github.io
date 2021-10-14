@@ -268,13 +268,27 @@ nav img{
     opacity: 80%;
 }
 
-#back{
+.progress-bar{
+    background-color: lightblue;
+    opacity: 80%;
+}
+
+
+.carousel-indicators{
+    bottom: -3em;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+#back, #back2{
     position: absolute;
     left: -4em;
     top: 40%;
 }
 
-#next{
+#next, #next2{
     position: absolute;
     right: -4em;
     top: 40%;
