@@ -294,7 +294,7 @@ nav img{
 }
 
 #overlay {
-    transition: 0.5s;
+    transition: .5s ease;
     position: fixed; /* Sit on top of the page content */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -315,8 +315,13 @@ nav img{
 
 
 #overlayContent{
+    transition: .5s ease;
     width: 60vw;
     margin: auto;
+}
+
+#overlayWrapper{
+    position: absolute;
 }
 
 @keyframes slideUp {
@@ -337,4 +342,8 @@ nav img{
 #optionsContainer h3{
     top: 40%;
     position: relative;
+}
+
+#optionsContainer{
+    border-radius: 20px;
 }
