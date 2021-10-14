@@ -258,7 +258,7 @@ nav img{
 }
 
 .tagger{
-    margin: 2px;
+    padding: 2px;
     display: inline-block;
     background-color: lightblue;
     border-radius: 5px;
