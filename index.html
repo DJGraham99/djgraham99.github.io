@@ -37,7 +37,7 @@
 </head>
 
 
-<body>
+<body class="stopScrolling">
 
 <nav>
     <div class="links">
@@ -62,7 +62,52 @@
     </div>
 </nav>
 
-<section id="welcome">
+    <div id="overlay">
+        <div id="overlayContent">
+        <h1> Dylan Graham </h1>
+        <h3> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
+            software engineering. Please enjoy browsing! </h3>
+
+
+            <div class="container" id="optionsContainer">
+                <div class="row">
+                    <div class="col-4 square border">
+                        <a onclick="welcomeButton()" href="#skills"> <h3> <i class="fas fa-lightbulb mediumIcon"></i> Key Skills </h3> </a>
+                    </div>
+                    <div class="col-4 square border">
+                        <a onclick="welcomeButton()" href="#projects"> <h3> <i class="fas fa-laptop-code mediumIcon"></i> Portfolio </h3> </a>
+                    </div>
+                    <div class="col-4 square border">
+                        <a onclick="welcomeButton()" href="#education">  <h3> <i class="fas fa-book mediumIcon"> </i> Education </h3> </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 square border">
+                        <a onclick="welcomeButton()" href="#work"> <h3> <i class="fas fa-briefcase mediumIcon"></i> Work & Volunteering </h3> </a>
+                    </div>
+                    <div class="col-4 square border">
+                        <a onclick="welcomeButton()" href="#sec_about"> <h3> <i class="fas fa-user-tie mediumIcon"></i> About Me </h3> </a>
+                    </div>
+                    <div class="col-4 square border">
+                        <h3> Contact Me</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        <button id="explorebutton" onclick="welcomeButton()">
+            <h3> Explore </h3>
+            <i class="fas fa-arrow-down largeIcon"></i>
+        </button>
+        </div>
+    </div>
+
+
+
+
+<!--<section id="welcome">
     <h1> Dylan Graham </h1>
     <h2> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
         software engineering. Please enjoy browsing! </h2>
@@ -75,7 +120,7 @@
         <i class="fas fa-arrow-down largeIcon"></i>
     </button>
 
-</section>
+</section>-->
 
 <div id="notIntro">
 
@@ -92,6 +137,7 @@
         <div class="container" id="skillsContainer">
             <div class="row">
                 <div class="col-8">
+                    <h4> Languages </h4>
 
             <div class="row">
                 <div class="col-2">
@@ -152,147 +198,71 @@
         <h1> <i class="fas fa-laptop-code"></i> Portfolio </h1>
 
 
-
         <div class="container my-4">
 
-            <!--Carousel Wrapper-->
-            <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
-
-                <!--Controls-->
-                <div class="controls-top">
-                    <a id="back" href="#multi-item-carousel" data-slide="prev"> <i class="fas fa-chevron-left largeIcon"></i> </a>
-                    <a id="next" href="#multi-item-carousel" data-slide="next"> <i class="fas fa-chevron-right largeIcon"></i> </a>
-                </div>
-                <!--/.Controls-->
-
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                </ol>
-                <!--/.Indicators-->
-
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-
-                    <!--First slide-->
-                    <div class="carousel-item active">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="images/NorthumberlandRockArt.JPG"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Northumberland Rock Art</h4>
-                                        <p class="card-text">My Newcastle University MSc Dissertation Project. An online website that is designed for searching a database of archaeological records.</p>
-                                        <div>
-                                            <p class="tagger"> JavaScript </p>
-                                            <p class="tagger"> PHP </p>
-                                            <p class="tagger"> HTML </p>
-                                            <p class="tagger"> CSS </p>
-                                            <p class="tagger"> MySQL </p>
-                                            <p class="tagger"> Agile </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="images/cavalloCheckout.JPG"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Cavallo Ice Cream Shop</h4>
-                                        <p class="card-text">
-                                            A group project completed at Newcastle University, which involved creating an ordering system and employee system for a business.
-                                        </p>
-                                        <div>
-                                            <p class="tagger"> JavaScript </p>
-                                            <p class="tagger"> PHP </p>
-                                            <p class="tagger"> HTML </p>
-                                            <p class="tagger"> CSS </p>
-                                            <p class="tagger"> AJAX </p>
-                                            <p class="tagger"> Agile </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="images/UGCScreen.JPG"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">University Grade Calculator</h4>
-                                        <p class="card-text"> I created this project so that I could keep track of my grades and how I would need to perform in remaining modules to reach my target. </p>
-                                        <div>
-                                            <p class="tagger"> Java </p>
-                                            <p class="tagger"> Swing </p>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="images/NorthumberlandRockArt.JPG"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Northumberland Rock Art</h4>
+                            <p class="card-text">My Newcastle University MSc Dissertation Project. An online website that is designed for searching a database of archaeological records.</p>
+                            <div>
+                                <p class="tagger"> JavaScript </p>
+                                <p class="tagger"> PHP </p>
+                                <p class="tagger"> HTML </p>
+                                <p class="tagger"> CSS </p>
+                                <p class="tagger"> MySQL </p>
+                                <p class="tagger"> Agile </p>
                             </div>
                         </div>
-
                     </div>
-                    <!--/.First slide-->
+                </div>
 
-                    <!--Second slide-->
-                    <div class="carousel-item">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a class="btn btn-primary">Button</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a class="btn btn-primary">Button</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a class="btn btn-primary">Button</a>
-                                    </div>
-                                </div>
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="images/cavalloCheckout.JPG"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Cavallo Ice Cream Shop</h4>
+                            <p class="card-text">
+                                A group project completed at Newcastle University, which involved creating an ordering system and employee system for a business.
+                            </p>
+                            <div>
+                                <p class="tagger"> JavaScript </p>
+                                <p class="tagger"> PHP </p>
+                                <p class="tagger"> HTML </p>
+                                <p class="tagger"> CSS </p>
+                                <p class="tagger"> AJAX </p>
+                                <p class="tagger"> Agile </p>
+                                <p class="tagger"> MySQL </p>
                             </div>
                         </div>
-
                     </div>
-                    <!--/.Second slide-->
-
                 </div>
-                <!--/.Slides-->
 
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="images/UGCScreen.JPG"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">University Grade Calculator</h4>
+                            <p class="card-text"> I created this project so that I could keep track of my grades and how I would need to perform in remaining modules to reach my target. </p>
+                            <div>
+                                <p class="tagger"> Java </p>
+                                <p class="tagger"> Swing </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--/.Carousel Wrapper-->
 
 
         </div>
+            <!--/.Carousel Wrapper-->
+
+
 
 
 
@@ -369,6 +339,7 @@
                                             <p class="tagger"> Java </p>
                                             <p class="tagger"> Object-orientated </p>
                                             <p class="tagger"> Generics </p>
+                                            <p class="tagger"> Error Management </p>
                                         </div>
                                     </div>
                                 </div>
@@ -410,13 +381,13 @@
 
                             <div class="col-md-4 clearfix d-none d-md-block">
                                 <div class="card mb-2">
-                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                         alt="Card image cap">
                                     <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                            card's content.</p>
-                                        <a class="btn btn-primary">Button</a>
+                                        <h4 class="card-title">Basic Java Functions</h4>
+                                        <p class="card-text"> A code which utilises objects and basic java functions to form a track and trace system for users. </p>
+                                        <div>
+                                            <p class="tagger"> Java </p>
+                                            <p class="tagger"> Object-orientated </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -606,7 +577,7 @@
 
 <script>
 
-
+/*
     function welcomeButton() {
         var x = document.getElementById("welcome");
         var y = document.getElementById("explorebutton")
@@ -622,8 +593,30 @@
             x.style.display = "none";
             z.scrollIntoView({behavior: "smooth"})
         }
-    }
+    }*/
 
+function welcomeButton() {
+    var x = document.getElementById("overlay");
+    var y = document.getElementById("explorebutton")
+    var nodes = x.children
+    if (x.style.height === "0%") {
+        document.body.classList.add("stopScrolling");
+        x.style.height = "100%";
+        y.style.display = "block";
+        for (var i = 0; i < nodes.length; i++) {
+            var node = nodes[i];
+            node.style.display="block";
+        }
+    } else {
+        document.body.classList.remove("stopScrolling");
+        y.style.display = "none";
+        x.style.height = "0%";
+        for (var p = 0; p < nodes.length; p++) {
+            var node = nodes[p];
+            node.style.display="none";
+        }
+    }
+}
 
 </script>
 

@@ -116,10 +116,12 @@ nav img{
 #explorebutton, #minimiseButton{
     opacity: 100%;
     background: none;
-    border: 2px solid black;
-    padding: 3px 2em;
-    border-radius: 100px;
+    border: none;
     margin: auto;
+}
+
+#optionsContainer{
+    border: black solid 2px;
 }
 
 
@@ -132,13 +134,9 @@ nav img{
     opacity: 40%;
 }
 
-#notIntro{
-    display: none;
-}
-
 .largeIcon{
     color: black;
-    font-size: 500%;
+    font-size: 400%;
 }
 
 .mediumIcon{
@@ -275,6 +273,7 @@ nav img{
 
 
 .carousel-indicators{
+    z-index: 2;
     bottom: -3em;
 }
 
@@ -292,4 +291,50 @@ nav img{
     position: absolute;
     right: -4em;
     top: 40%;
+}
+
+#overlay {
+    transition: 0.5s;
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white; /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
+.stopScrolling{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#overlayContent{
+    width: 60vw;
+    margin: auto;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.square{
+    background-color: white;
+    height: 18em;
+    width: 10em;
+}
+
+#optionsContainer h3{
+    top: 40%;
+    position: relative;
 }
