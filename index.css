@@ -26,6 +26,7 @@ nav{
     border-right: black solid 3px;
 }
 h1{
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
     margin: 1em 0;
 }
 
@@ -228,19 +229,12 @@ nav img{
 }
 
 
-#skills{
-    padding-bottom: 15em;
-    border-bottom: lightgrey solid 8px;
-}
-
 
 .contactinfo{
     text-align: center;
     background: white;
     padding: 20px;
     word-wrap: break-word;
-    border: black solid 2px;
-    border-radius: 20px;
 }
 
 
@@ -346,4 +340,19 @@ nav img{
 
 #optionsContainer{
     border-radius: 20px;
+}
+
+#emailInput, #messageInput{
+    width: 40%;
+}
+
+#emailInput input, #messageInput textarea{
+    border: black solid 2px;
+    width: 100%;
+}
+
+#emailbtn{
+    background: none;
+    border: black solid 2px;
+    box-shadow: black 2px 2px;
 }
