@@ -3,12 +3,30 @@
 <head>
 
 
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+            integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+            crossorigin="anonymous"></script>&ndash;&gt;-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+            crossorigin="anonymous"></script>-->
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
@@ -25,21 +43,21 @@
     <div class="links">
 
         <ul id="sections">
-            <li> Link </li>
-            <li onclick="welcomeButton()"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i> </li>
-            <li> <i class="fas fa-laptop-code mediumIcon"></i> </li>
-            <li> <i class="fas fa-briefcase mediumIcon"></i> </li>
-            <li> <i class="fas fa-graduation-cap mediumIcon"></i> </li>
-            <li> <i class="fas fa-book mediumIcon"></i> </li>
-            <li> <a href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i> </a> </li>
-            <li> <a href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i> </a> </li>
+            <li> Link</li>
+            <li onclick="welcomeButton()"><i class="fa fa-home mediumIcon" aria-hidden="true"></i></li>
+            <li><i class="fas fa-laptop-code mediumIcon"></i></li>
+            <li><i class="fas fa-briefcase mediumIcon"></i></li>
+            <li><i class="fas fa-graduation-cap mediumIcon"></i></li>
+            <li><a href="#education"> <i class="fas fa-book mediumIcon"></i></li>
+            <li><a href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i> </a></li>
+            <li><a href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i> </a></li>
 
 
         </ul>
 
         <ul>
-            <li> Social </li>
-            <li> <i class="fab fa-linkedin mediumIcon"></i> </li>
+            <li> Social</li>
+            <li><i class="fab fa-linkedin mediumIcon"></i></li>
         </ul>
 
     </div>
@@ -48,7 +66,7 @@
 <section id="welcome">
     <h1> Dylan Graham </h1>
     <h2> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
-    software engineering. Please enjoy browsing! </h2>
+        software engineering. Please enjoy browsing! </h2>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -68,11 +86,191 @@
     </button>
 
 
+    <section id="projects">
+        <h1> Portfolio </h1>
+
+
+
+        <div class="container my-4">
+
+            <!--Carousel Wrapper-->
+            <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                    <a id="back" href="#multi-item-carousel" data-slide="prev"> <i class="fas fa-chevron-left largeIcon"></i> </a>
+                    <a id="next" href="#multi-item-carousel" data-slide="next"> <i class="fas fa-chevron-right largeIcon"></i> </a>
+                </div>
+                <!--/.Controls-->
+
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide-->
+                    <div class="carousel-item active">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.First slide-->
+
+                    <!--Second slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Second slide-->
+
+                    <!--Third slide-->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                            card's content.</p>
+                                        <a class="btn btn-primary">Button</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/.Third slide-->
+
+                </div>
+                <!--/.Slides-->
+
+            </div>
+            <!--/.Carousel Wrapper-->
+
+
+        </div>
+
+    </section>
+
+
     <section id="education">
         <h1> Education </h1>
 
         <div class="container" id="educationContainer">
-            <br>
             <div class="row">
                 <div class="col-6">
                     <h4> Computer Science MSc / Distinction (Predicted) </h4>
@@ -112,9 +310,12 @@
                 <div class="col-6">
                     <h4> Geography and Archaeology BA / 2:1 Honours </h4>
                     <h5> University of Nottingham / Sep 2017 - Sep 2020 </h5>
-                    <h5> Thesis: An Investigation into the Relationship Between Roadside Emissions and Avian Populations </h5>
-                    <p> Third-party data was used to analyse bird populations in relation to road networks. This was done
-                        by creating species-diversity graphs using logistic regression and geo-spatially mapping populations using GIS.</p>
+                    <h5> Thesis: An Investigation into the Relationship Between Roadside Emissions and Avian
+                        Populations </h5>
+                    <p> Third-party data was used to analyse bird populations in relation to road networks. This was
+                        done
+                        by creating species-diversity graphs using logistic regression and geo-spatially mapping
+                        populations using GIS.</p>
                     <div class="row">
                         <p class="tagger"> R Programming </p>
                         <p class="tagger"> Mathematical aptitude </p>
@@ -128,103 +329,121 @@
 
                     <br><br>
                     <div>
-                    <h4> A-levels and GCSEs </h4>
-                    <p> A-Levels: Mathematics, Biology, Geography </p>
-                    <p> GCSEs: 11 A*-C including Mathematics and English </p>
+                        <h4> A-levels and GCSEs </h4>
+                        <p> A-Levels: Mathematics, Biology, Geography </p>
+                        <p> GCSEs: 11 A*-C including Mathematics and English </p>
 
                     </div>
                 </div>
             </div>
 
 
-
         </div>
 
 
-
     </section>
-
-
 
 
     <section id="skills">
 
         <h1> Key Skills </h1>
 
-        <div class = "carousel">
-            <figure>
-                <div id="compon">
-                <h2> Coding </h2>
-                <p></p>
+        <div class="container" id="skillsContainer">
+            <div class="row">
+                <div class="col-2">
+                    <h4> Java </h4>
                 </div>
-
-                    <div id="compon">
-                        <h2> Tools Used </h2>
+                <div class="col-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                             aria-valuemax="100"></div>
                     </div>
-                <div id="compon">
-                <h2> Soft Skills </h2>
                 </div>
-
-                <div id="compon">
-                <h2> Developing my Skills </h2>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h4> HTML / CSS </h4>
                 </div>
-
-                <div id="compon">
-                <h2> General Skills </h2>
+                <div class="col-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
                 </div>
-
-            </figure>
-
-            <nav>
-                <button class="nav prev noBackground"> <i class="fas fa-angle-left largeIcon"></i> </button>
-                <button class="nav next noBackground"><i class="fas fa-angle-right largeIcon"></i></button>
-            </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h4> PHP / MySQL </h4>
+                </div>
+                <div class="col-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h4> JavaScript </h4>
+                </div>
+                <div class="col-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h4> PHP </h4>
+                </div>
+                <div class="col-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
+</section>
 
 
-
-    </section>
-
-
-    <br>
-
-
-
+<br>
 
 
 <script>
-//In progress to highlight sections when scrolling through them
-/*    window.onscroll = function(){ scrollFunction(); }
+    //In progress to highlight sections when scrolling through them
+    /*    window.onscroll = function(){ scrollFunction(); }
 
 
 
 
 
-    function scrollFunction(){
+        function scrollFunction(){
 
-        let sections = document.getElementsByTagName('section');
-        // tracks index of current section
-        for(var i=0; i<sections.length; i++){
-            eval("var variable" + i + " = " + sections[i].offsetTop);
-        }
-    }*/
+            let sections = document.getElementsByTagName('section');
+            // tracks index of current section
+            for(var i=0; i<sections.length; i++){
+                eval("var variable" + i + " = " + sections[i].offsetTop);
+            }
+        }*/
 
-
-
+/*
 
     var
         carousel = document.querySelector('.carousel'),
         figure = carousel.querySelector('figure'),
         nav = carousel.querySelector('nav'),
         numImages = figure.childElementCount,
-        theta =  2 * Math.PI / numImages,
+        theta = 2 * Math.PI / numImages,
         currImage = 0
     imageTracker = 1;
-    img=carousel.querySelector('div')
+    img = carousel.querySelector('div')
     ;
 
     nav.addEventListener('click', onClick, true);
+
     function onClick(e) {
         e.stopPropagation();
 
@@ -232,8 +451,7 @@
 
         if (t.classList.contains('next')) {
             currImage++;
-        }
-        else {
+        } else {
             currImage--;
         }
 
@@ -241,72 +459,62 @@
         figure.style.transform = `rotateY(${currImage * -theta}rad)`;
 
     }
+*/
 
 
-    function welcomeButton(){
+    function welcomeButton() {
         var x = document.getElementById("welcome");
-        var y =  document.getElementById("explorebutton")
+        var y = document.getElementById("explorebutton")
         var z = document.getElementById("notIntro")
-        if (x.style.display==="none"){
-            z.style.display="none";
-            x.style.display="block";
-            y.style.display="block";
-            x.scrollIntoView({behavior:"smooth"})
-        }
-        else{
+        if (x.style.display === "none") {
+            z.style.display = "none";
+            x.style.display = "block";
+            y.style.display = "block";
+            x.scrollIntoView({behavior: "smooth"})
+        } else {
             z.scrollIntoView({behavior: 'smooth'})
-            z.style.display="block";
+            z.style.display = "block";
             x.style.display = "none";
-            y.style.display="none";
+            y.style.display = "none";
         }
     }
-
 
 
 </script>
 
 
-
-
-
-
-
-
-
-
 <section id="sec_about">
-<div class="typewriter">
-    <h1>About Me</h1>
-</div>
+    <div class="typewriter">
+        <h1>About Me</h1>
+    </div>
 
-<div class="bodymain">
-
-
+    <div class="bodymain">
 
 
-    <div class="contactinfo">
+        <div class="contactinfo">
 
-        <p>
-            I am currently due to finish my Msc in September so I am looking for a role in software engineering or something
-            similar between now and then. If you have any opportunities please let me know using the information below. </p>
-        <p> Thanks for taking the time to view my portfolio! </p>
-        <br>
-        <br>
+            <p>
+                I am currently due to finish my Msc in September so I am looking for a role in software engineering or
+                something
+                similar between now and then. If you have any opportunities please let me know using the information
+                below. </p>
+            <p> Thanks for taking the time to view my portfolio! </p>
+            <br>
+            <br>
 
 
+            <h2> Contact Information </h2>
+            <p> Contact Number: <b> 07387382553 </b></p>
+            <p> Email Address: <b>dylanjosephgraham@gmail.com</b></p>
 
-        <h2> Contact Information </h2>
-        <p> Contact Number: <b> 07387382553 </b> </p>
-        <p> Email Address: <b>dylanjosephgraham@gmail.com</b></p>
 
+        </div>
 
     </div>
 
-</div>
-
-<div class="topimage">
-    <img src="images/newcastle.png">
-</div>
+    <div class="topimage">
+        <img src="images/newcastle.png">
+    </div>
 
 </section>
 </div>
