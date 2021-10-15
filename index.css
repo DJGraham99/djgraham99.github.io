@@ -19,6 +19,7 @@ section{
 }
 
 nav{
+    background-color: #192841;
     position: fixed;
     left: 0;
     height: 100%;
@@ -41,35 +42,40 @@ h2{
 }
 
 nav ul{
-
     padding:0;
     list-style: none;
-    border-bottom: 3px black solid;
+    border-bottom: 3px white solid;
 
 }
 
+.sectionLabel{
+    display: none;
+    position: absolute;
+    left: 4.5em;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: black solid 2px;
+}
+
+.sectionLabel h5{
+    margin: 0;
+}
+
 nav li{
+    color: white;
     display: grid;
     margin: 1em 0;
     height: 3em;
     width: 3em;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
     align-items: center;
 }
 
 a{
-    color: black;
-}
-
-nav li:nth-child(1){
-    border: none;
-}
-
-nav li:nth-child(1):hover{
-    border: none;
-    width:3em;
-    height: 3em;
+    color: white;
 }
 
 
@@ -77,9 +83,17 @@ nav li:nth-child(1):hover{
 nav li:hover{
     width: 3.2em;
     height: 3.2em;
-    border: black solid 3px;
+    border: white solid 3px;
+    background-color: white;
 }
 
+nav li:hover .mediumIcon{
+    color: black;
+}
+
+nav li:hover .sectionLabel{
+    display: block;
+}
 
 .card{
     margin: auto;
@@ -141,7 +155,6 @@ nav img{
 }
 
 .mediumIcon{
-    color: black;
     font-size: 200%;
 }
 
