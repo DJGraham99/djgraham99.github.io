@@ -103,11 +103,22 @@ nav li:hover{
 }
 
 .expandID h5{
-    display: none;
+    left: 4em;
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+}
+
+.importantDisplay{
+    opacity: 100% !important;
 }
 
 
 nav li:hover .mediumIcon{
+    color: black;
+}
+
+nav li:hover .titleID{
     color: black;
 }
 
