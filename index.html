@@ -39,38 +39,71 @@
 </head>
 
 
+<script>
+    function expandNav(){
+        var nav = document.getElementById("nav");
+        var sections = document.getElementsByClassName("hoverID");
+        var sectionLinks = document.getElementsByClassName("expandID");
+        if (nav.style.width === "4em") {
+            nav.style.width = "20em"
+
+            for(var i = 0; i<sections.length; i++){
+                var section = sections[i];
+                var sectionLink = sectionLinks[i];
+                section.classList.remove("hoverIcon")
+                sectionLink.classList.add("expandMenu")
+            }
+        }
+        else{
+            nav.style.width = "4em"
+            for(var r = 0; r<sections.length; r++){
+                var sectionr = sections[r];
+                var sectionLinkr = sectionLinks[r];
+                sectionr.classList.add("hoverIcon")
+                sectionLinkr.classList.remove("expandMenu")
+            }
+        }
+    }
+
+
+
+</script>
+
+
 <body class="stopScrolling">
 
-<nav>
-    <div class="links">
+<nav id="nav" style="width: 4em;">
+    <div class="links" id="links">
 
         <ul id="sections">
-            <li> <i class="fas fa-bars mediumIcon"></i>
+            <li class="hoverIcon hoverID" onclick="expandNav()"> <a class="expandID"> <i class="fas fa-bars mediumIcon"></i> </a>
             </li>
-            <li onclick="welcomeButton()"><i class="fa fa-home mediumIcon" aria-hidden="true"></i></li>
-            <li><a href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i> </a>
+            <li class="hoverIcon hoverID" onclick="welcomeButton()"> <a class="expandID"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i> </a> </li>
+            <li class="hoverIcon hoverID"> <a id="skillsMenu" class="expandID" href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
+
+            </a>
                 <div class="sectionLabel">
                     <h5>Skills</h5>
                 </div>
             </li>
-            <li> <a href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i> </a>
+            <li class="hoverIcon hoverID"> <a class="expandID" href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i> </a>
                 <div class="sectionLabel">
                     <h5>Portfolio</h5>
                 </div>
             </li>
-            <li><a href="#education"> <i class="fas fa-book mediumIcon"> </i> </a>
+            <li class="hoverIcon hoverID"><a class="expandID" href="#education"> <i class="fas fa-book mediumIcon"> </i> </a>
                 <div class="sectionLabel">
                     <h5>Education</h5>
                 </div></li>
-            <li> <a href="#work"> <i class="fas fa-briefcase mediumIcon"></i> </a>
+            <li class="hoverIcon hoverID"> <a class="expandID" href="#work"> <i class="fas fa-briefcase mediumIcon"></i> </a>
                 <div class="sectionLabel">
                     <h5>Work & Volunteering</h5>
                 </div></li>
-            <li><a href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i> </a>
+            <li class="hoverIcon hoverID"><a class="expandID" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i> </a>
                 <div class="sectionLabel">
                     <h5>About</h5>
                 </div></li>
-            <li> <a href="#contact"> <i class="far fa-address-book mediumIcon"></i> </a>
+            <li class="hoverIcon hoverID"> <a class="expandID" href="#contact"> <i class="far fa-address-book mediumIcon"></i> </a>
                 <div class="sectionLabel">
                     <h5>Contact Information</h5>
                 </div></li>
@@ -79,7 +112,7 @@
         </ul>
 
         <ul>
-            <li><i class="fab fa-linkedin mediumIcon"></i>
+            <li class="hoverIcon hoverID"> <a class="expandID"> <i class="fab fa-linkedin mediumIcon"></i> </a>
                 <div class="sectionLabel">
                     <h5>LinkedIn</h5>
                 </div></li>
