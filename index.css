@@ -127,6 +127,7 @@ nav li:hover .titleID{
 }
 
 .card{
+    transition: opacity 0.5s ease;
     margin: auto;
 }
 
@@ -207,9 +208,12 @@ nav img{
 
 #skillsContainer .row{
     align-items: center;
+    margin: 2em;
 }
 
-
+#projectContainer .card:hover, #javaContainer .card:hover{
+    opacity: 30%;
+}
 
 
 
@@ -392,6 +396,8 @@ nav img{
 #emailInput input, #messageInput textarea{
     border: black solid 2px;
     width: 100%;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #emailbtn{
@@ -399,3 +405,5 @@ nav img{
     border: black solid 2px;
     box-shadow: black 2px 2px;
 }
+
+
