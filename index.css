@@ -6,8 +6,7 @@ html {
 body{
     text-align: center;
     font-family: 'Playfair Display', serif;
-    width: 120ch;
-    margin: auto;
+    margin: 0 0 0 4em;
 }
 
 section{
@@ -208,11 +207,15 @@ nav img{
 
 #skillsContainer .row{
     align-items: center;
-    margin: 2em;
+    margin: 1em;
 }
 
 #projectContainer .card:hover, #javaContainer .card:hover{
     opacity: 30%;
+}
+
+#javaContainer{
+    width: 80%;
 }
 
 

@@ -45,8 +45,10 @@
         var sections = document.getElementsByClassName("hoverID");
         var sectionLinks = document.getElementsByClassName("expandID");
         var titles = document.getElementsByClassName("titleID");
+        var body = document.getElementById("body")
         if (nav.style.width === "4em") {
             nav.style.width = "20em"
+            body.style.marginLeft = "20em"
 
             for(var i = 0; i<sections.length; i++){
                 var section = sections[i];
@@ -59,6 +61,7 @@
         }
         else{
             nav.style.width = "4em"
+            body.style.marginLeft = "4em"
             for(var r = 0; r<sections.length; r++){
                 var sectionr = sections[r];
                 var sectionLinkr = sectionLinks[r];
@@ -73,9 +76,6 @@
 
 
 </script>
-
-
-<body class="stopScrolling">
 
 <nav id="nav" style="width: 4em;">
     <div class="links" id="links">
@@ -145,6 +145,10 @@
 
     </div>
 </nav>
+
+<body class="stopScrolling" id="body">
+
+
 <div id="overlayWrapper">
     <div id="overlay">
         <div id="overlayContent">
