@@ -521,11 +521,16 @@ nav img{
 
 #summaryBackground{
     transform: skewY(-11deg);
-    padding: 5em 0;
+    padding: 3em 0;
     background-color: #FFE5B4;
     border-top: 5px solid grey;
     border-bottom: 5px solid grey;
 }
+
+#tagCloudTitle{
+    margin: 0.8em 0 0.5em;
+}
+
 
 /*
 #projects {
