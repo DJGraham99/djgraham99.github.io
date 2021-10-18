@@ -13,7 +13,7 @@ section{
     padding: 5em 0;
 }
 
-#sec_about, #welcome{
+#welcome{
     padding-bottom: 0;
 }
 
@@ -304,12 +304,13 @@ nav img{
 }
 
 .tagger{
+    box-shadow: black 2px 2px;
     margin: 2px;
     padding: 2px;
     display: inline-block;
     background-color: lightblue;
     border-radius: 5px;
-    border: white solid 1px;
+    border: black solid 2px;
     width: auto;
     opacity: 80%;
 }
@@ -457,11 +458,12 @@ nav img{
 }
 
 .fa-star{
+    font-size: 40%;
     position: absolute;
-    color: yellow;
+    color: RGB(255,253,116);
     animation-name: stars;
     animation-iteration-count:infinite;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 
@@ -490,22 +492,19 @@ nav img{
 
 @keyframes stars {
     0% {
-        transform: scale(0.1);
+        transform: scale(1);
     }
-    20% {
-        transform: scale(0.3);
+    25% {
+        transform: scale(1.5);
     }
-    40% {
-        transform: scale(0.5);
+    50% {
+        transform: scale(2);
     }
-    60% {
-        transform: scale(0.5);
-    }
-    80% {
-        transform: scale(0.3);
+    75% {
+        transform: scale(1.5);
     }
     100%{
-        transform: scale(0.1);
+        transform: scale(1);
 }
 
 }
@@ -513,3 +512,27 @@ nav img{
 #sec_about{
     padding-top: 2em;
 }
+
+#taggerSummary {
+    transform: skewY(11deg);
+    margin: auto;
+    width: 80%;
+}
+
+#summaryBackground{
+    transform: skewY(-11deg);
+    padding: 5em 0;
+    background-color: #FFE5B4;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+}
+
+/*
+#projects {
+    background: rgb(255, 216, 70);
+    background: radial-gradient(circle, rgba(255, 216, 70, 1) 0%, rgba(255, 194, 107, 1) 100%);
+}
+
+#projectsContent{
+    transform: skewY(-11deg);
+}*/

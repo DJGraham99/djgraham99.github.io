@@ -171,17 +171,17 @@
 
 
 
-            <i class="fas fa-star" style="left: 10vw; top: 30vh;"></i>
-            <i class="fas fa-star" style="left: 30vw; top: 35vh;"></i>
-            <i class="fas fa-star" style="left: 80vw; top: 26vh"></i>
+            <i class="fas fa-star" style="left: 10vw; top: 30vh; animation-delay: 0.5s"></i>
+            <i class="fas fa-star" style="left: 30vw; top: 35vh; animation-delay: 0.5s"></i>
+            <i class="fas fa-star" style="left: 80vw; top: 26vh; animation-delay: 0.5s"></i>
 
-            <i class="fas fa-star" style="left: 16vw; top: 20vh;"></i>
-            <i class="fas fa-star" style="left: 89vw; top: 10vh;"> </i>
-            <i class="fas fa-star" style="left: 48vw; top: 7vh;"></i>
+            <i class="fas fa-star" style="left: 16vw; top: 20vh; animation-delay: 1s "></i>
+            <i class="fas fa-star" style="left: 89vw; top: 10vh; animation-delay: 1s"> </i>
+            <i class="fas fa-star" style="left: 48vw; top: 7vh; animation-delay: 1s"></i>
 
-            <i class="fas fa-star" style="left: 5vw; top: 5vh;"></i>
-            <i class="fas fa-star" style="left: 92vw; top: 8vh;"> </i>
-            <i class="fas fa-star" style="left: 60vw; top: 2vh;"></i>
+            <i class="fas fa-star" style="left: 5vw; top: 5vh; animation-delay: 0.75s"></i>
+            <i class="fas fa-star" style="left: 92vw; top: 8vh; animation-delay: 0.75s"> </i>
+            <i class="fas fa-star" style="left: 60vw; top: 2vh; animation-delay: 0.75s"></i>
 
             <i class="fas fa-star" style="left: 25vw; top: 8vh;"></i>
             <i class="fas fa-star" style="left: 75vw; top: 13vh;"> </i>
@@ -272,12 +272,14 @@
                     </p>
                 </div>
             </div>
-            <div id="taggerSummary">
-            </div>
-
         </div>
-
     </section>
+
+    <div id="summaryBackground">
+    <div id="taggerSummary">
+
+    </div>
+    </div>
 
 
 
@@ -344,12 +346,18 @@
                     and the progress bars on the right show my familiarity and comfort with the languages.</p>
                 </div>
         </div>
+            <div class="row">
+                <div class="col">
+                    <p> ahakjhdskhjashjkjhs </p>
+                </div>
+            </div>
         </div>
 
     </section>
 <br> <br>
 
     <section id="projects" data-aos="fade-up" data-aos-duration="2000">
+        <div id="projectsContent">
         <h1> <i class="fas fa-laptop-code"></i> Portfolio </h1>
 
 
@@ -370,6 +378,10 @@
                                 <p class="tagger tag"> CSS </p>
                                 <p class="tagger tag"> MySQL </p>
                                 <p class="tagger tag"> Agile </p>
+                                <p class="tagger tag"> Communication </p>
+                                <p class="tagger tag"> Time management </p>
+                                <p class="tagger tag"> Version control </p>
+
                             </div>
                         </div>
                     </div>
@@ -392,6 +404,9 @@
                                 <p class="tagger tag"> AJAX </p>
                                 <p class="tagger tag"> Agile </p>
                                 <p class="tagger tag"> MySQL </p>
+                                <p class="tagger tag"> Communication </p>
+                                <p class="tagger tag"> Teamwork </p>
+                                <p class="tagger tag"> Version control </p>
                             </div>
                         </div>
                     </div>
@@ -407,6 +422,7 @@
                             <div>
                                 <p class="tagger tag"> Java </p>
                                 <p class="tagger tag"> Swing </p>
+                                <p class="tagger tag"> Mathematical aptitude </p>
                             </div>
                         </div>
                     </div>
@@ -555,6 +571,7 @@
 
 
         </div>
+        </div>
 
     </section>
 
@@ -587,13 +604,18 @@
 
                     <div class="row">
                         <p class="tagger tag"> Pair programming </p>
-                        <p class="tagger tag"> Object-orientated programming </p>
+                        <p class="tagger tag"> Object-orientated </p>
                         <p class="tagger tag"> CSS </p>
                         <p class="tagger tag"> HTML </p>
                         <p class="tagger tag"> PHP </p>
                         <p class="tagger tag"> Java </p>
                         <p class="tagger tag"> JavaScript </p>
                         <p class="tagger tag"> Agile </p>
+                        <p class="tagger tag"> Version control </p>
+                        <p class="tagger tag"> Teamwork </p>
+                        <p class="tagger tag"> Communication </p>
+                        <p class="tagger tag"> Problem solving </p>
+                        <p class="tagger tag"> Time management </p>
                     </div>
 
 
@@ -615,7 +637,7 @@
                         <p class="tagger tag"> Report writing </p>
                         <p class="tagger tag"> Social awareness </p>
                         <p class="tagger tag"> Time management </p>
-                        <p class="tagger tag"> Problem-solving skills </p>
+                        <p class="tagger tag"> Problem solving </p>
                         <p class="tagger tag"> Perspective-taking </p>
                     </div>
 
@@ -693,7 +715,7 @@
                     <p> • Mapped archaeological excavation sites. <br>
                     • Processed archaeological finds ensuring all details are recorded. <br>
                     <div>
-                        <p class="tagger tag"> Attention to details </p>
+                        <p class="tagger tag"> Attention to detail </p>
                         <p class="tagger tag"> Teamwork </p>
                         <p class="tagger tag"> Cataloguing data </p>
                     </div>
@@ -844,9 +866,29 @@ function welcomeButton() {
             }
             /*summary.innerHTML += " <div class='tagger tagSummary'> " + tag.innerHTML + " </div> ";*/
         }
-        array.sort();
+
+
+
+// sort by name
+        array.sort(function(a, b) {
+            var nameA = a.tag.toUpperCase(); // ignore upper and lowercase
+            var nameB = b.tag.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+
+            // names must be equal
+            return 0;
+        });
+
+
+
+
         for (var p=0; p<array.length; p++){
-            var font = 100 * array[p].number;
+            var font = (300 * array[p].number)/4;
             summary.innerHTML += " <div style='font-size: " + font + "%' class='tagger tagSummary'> " + array[p].tag + " </div> ";
         }
     }
