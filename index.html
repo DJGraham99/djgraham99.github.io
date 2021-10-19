@@ -17,6 +17,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 
@@ -111,6 +116,13 @@
                     <h5>Home</h5>
                 </div>
             </li>
+            <li class="hoverIcon hoverID"><a class="expandID" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
+                <h5 class="titleID"> About </h5>
+            </a>
+                <div class="sectionLabel">
+                    <h5>About</h5>
+                </div></li>
+
             <li class="hoverIcon hoverID"> <a id="skillsMenu" class="expandID" href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
                 <h5 class="titleID"> Skills </h5>
             </a>
@@ -136,12 +148,6 @@
             </a>
                 <div class="sectionLabel">
                     <h5>Work & Volunteering</h5>
-                </div></li>
-            <li class="hoverIcon hoverID"><a class="expandID" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
-                <h5 class="titleID"> About </h5>
-            </a>
-                <div class="sectionLabel">
-                    <h5>About</h5>
                 </div></li>
             <li class="hoverIcon hoverID"> <a class="expandID" href="#contact"> <i class="far fa-address-book mediumIcon"></i>
                 <h5 class="titleID"> Contact Information </h5>
@@ -172,7 +178,8 @@
     <div id="overlay">
         <div id="overlayContent">
         <h1 id="titleName"> Dylan Graham </h1>
-            <h5 id="titleDesc"> Online CV and Portfolio </h5>
+            <h5 id="titleDesc"> Computer Science Graduate </h5>
+            <h6 id="titleDescrip"> Online CV and Portfolio </h6>
 
 
 
@@ -251,15 +258,54 @@
 
 </section>-->
 
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="rockArtModal" tabindex="-1" role="dialog" aria-labelledby="rockArtModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> Northumberland Rock Art Project </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> This project was completed for my Computer Science MSc dissertation at Newcastle University.
+                The project involved retrieving data from an out-of-date SQL database and then using that data to
+                create a responsive website that linked directly to the data. </p>
+                <img src="images/NorthumberlandRockArt.JPG" style="width: 100%">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cavalloModal" tabindex="-1" role="dialog" aria-labelledby="cavalloModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> Cavallo Team Project </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> text will go here eventuallytext will go here eventuallytext will go here eventuallytext will go here eventually</p>
+                <img src="images/NorthumberlandRockArt.JPG" style="width: 100%">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div id="notIntro">
 
-    <button id="minimiseButton" onclick="welcomeButton()">
-        <i class="fas fa-angle-down largeIcon"></i>
-    </button>
-
     <section id="sec_about" data-aos="fade-up" data-aos-duration="2000">
+        <button id="minimiseButton" onclick="welcomeButton()">
+            <i class="fas fa-angle-down largeIcon"></i>
+        </button>
         <h1> About </h1>
-
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -268,12 +314,12 @@
                 <div class="col-8 text-left">
                     <p>My name is Dylan Graham and I am an aspiring software engineer.
                     I hope that this portfolio demonstrates my strengths and interests.
-
+                        As of September 2021 I have now finished my Computer Science MSc and I am now looking
+                        to move into a software engineering role.
                         <br>
 
                         Throughout this website I will highlight my strengths and where they are demonstrated
-                        by placing them in a light blue box near the project that that skill was used in. A summary
-                        of these key skills is as follows:
+                        by placing them in a light blue box near the project that that skill was used in.
                     </p>
                 </div>
             </div>
@@ -358,6 +404,7 @@
     <div id="summaryBackground">
         <div id="taggerSummary">
             <h1 id="tagCloudTitle"> Key Skills Tag Cloud </h1>
+            <h6> This diagram shows the skills demonstrated in my cv and the frequency of their use throughout the page. <br> (Larger = More frequent) </h6>
         </div>
         <br>
     </div>
@@ -373,7 +420,8 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-2">
+                    <div class="card mb-2"  data-toggle="modal" data-target="#rockArtModal">
+                        <h3 class="fadeText"> Click for more information </h3>
                         <img class="card-img-top" src="images/NorthumberlandRockArt.JPG"
                              alt="Card image cap">
                         <div class="card-body">
@@ -389,6 +437,7 @@
                                 <p class="tagger tag"> Communication </p>
                                 <p class="tagger tag"> Time management </p>
                                 <p class="tagger tag"> Version control </p>
+                                <p class="tagger tag"> Object-orientated </p>
 
                             </div>
                         </div>
@@ -396,7 +445,8 @@
                 </div>
 
                 <div class="col-md-4 clearfix d-none d-md-block">
-                    <div class="card mb-2">
+                    <div class="card mb-2" data-toggle="modal" data-target="#cavalloModal">
+                        <h3 class="fadeText"> Click for more information </h3>
                         <img class="card-img-top" src="images/cavalloCheckout.JPG"
                              alt="Card image cap">
                         <div class="card-body">
@@ -422,6 +472,7 @@
 
                 <div class="col-md-4 clearfix d-none d-md-block">
                     <div class="card mb-2">
+                        <h3 class="fadeText"> Click for more information </h3>
                         <img class="card-img-top" src="images/UGCScreen.JPG"
                              alt="Card image cap">
                         <div class="card-body">
@@ -828,6 +879,7 @@ function welcomeButton() {
 </section>-->
 
     <section id="contact" data-aos="fade-up" data-aos-duration="2000">
+        <div class="contactInfoDiv">
         <h1> <i class="far fa-address-book"></i> Contact Information </h1>
         <p> Contact Number: <b> 07387382553 </b></p>
         <p> Email Address: <b>dylanjosephgraham@gmail.com</b></p>
@@ -844,6 +896,7 @@ function welcomeButton() {
             <!-- your other form fields go here -->
             <button type="submit" id="emailbtn">Send</button>
         </form>
+        </div>
 
         <div class="topimage">
             <img src="images/newcastle.png">

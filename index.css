@@ -10,7 +10,8 @@ body{
 }
 
 section{
-    padding: 5em 0;
+    margin: 2em 0;
+    padding: 2em 0;
 }
 
 #welcome{
@@ -213,14 +214,17 @@ nav img{
     margin: 1em;
 }
 
-#projectContainer .card:hover, #javaContainer .card:hover{
-    opacity: 30%;
+#projectContainer .card:hover .card-img-top, #projectContainer .card:hover .card-body{
+    opacity: 10%;
 }
 
 #javaContainer{
     width: 80%;
 }
 
+#projectContainer .card:hover .fadeText{
+    opacity: 100%;
+}
 
 
 
@@ -398,7 +402,7 @@ nav img{
 }
 
 #emailInput, #messageInput{
-    width: 40%;
+    width: 70%;
 }
 
 #emailInput input, #messageInput textarea{
@@ -409,9 +413,11 @@ nav img{
 }
 
 #emailbtn{
-    background: none;
+    background: white;
     border: black solid 2px;
     box-shadow: black 2px 2px;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 #overlay {
@@ -438,7 +444,7 @@ nav img{
 }
 
 #titleName{
-    font-family: 'Festive', cursive;
+    font-family: 'Amatic SC', cursive;
     text-shadow: none;
     color: white;
     font-size: 600%;
@@ -446,15 +452,27 @@ nav img{
 }
 
 #exploreText{
-    font-family: 'Festive', cursive;
+    font-family: 'Amatic SC', cursive;
     color: white;
     font-size: 300%;
 }
 
-#titleDesc{
-    font-family: 'Festive', cursive;
+#titleDesc, #titleDescrip{
+    font-family: 'Amatic SC', cursive;
     color: white;
     font-size: 300%;
+}
+
+#titleDescrip{
+    font-size: 250%;
+}
+
+.fadeText{
+    position: absolute;
+    align-self: center;
+    top: 48%;
+    opacity: 0;
+    font-weight: bold;
 }
 
 .fa-star{
@@ -510,8 +528,14 @@ nav img{
 }
 
 #sec_about{
+    margin-top: 0;
     padding-top: 2em;
-}
+    background-color: #ADD8E6;
+    border-bottom: #192841 solid 5px;
+    border-top: #192841 solid 5px;
+  /*  background: rgb(82,205,255);
+    background: linear-gradient(180deg, rgba(82,205,255,1) 0%, rgba(242,251,250,1) 85%, rgba(255,255,255,1) 100%);
+*/}
 
 #taggerSummary {
     transform: skewY(11deg);
@@ -523,14 +547,19 @@ nav img{
     transform: skewY(-11deg);
     padding: 3em 0;
     background-color: #FFE5B4;
-    border-top: 5px solid grey;
-    border-bottom: 5px solid grey;
+    border-top: 5px solid #192841;
+    border-bottom: 5px solid #192841;
 }
 
 #tagCloudTitle{
     margin: 0.8em 0 0.5em;
 }
 
+#education{
+    background-color: #ebffe5;
+    border-top: #192841 5px solid;
+    border-bottom: #192841 5px solid;
+}
 
 /*
 #projects {
@@ -541,3 +570,17 @@ nav img{
 #projectsContent{
     transform: skewY(-11deg);
 }*/
+
+#educationContainer {
+    background-color: white;
+    box-shadow: black 5px 5px;
+}
+
+.contactInfoDiv{
+    box-shadow: black 5px 5px;
+    background: #FFFCC9;
+    border: #192841 solid 5px;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+}
