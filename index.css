@@ -412,6 +412,22 @@ nav img{
     border-radius: 5px;
 }
 
+#messageInput textarea{
+    height: 10em;
+}
+
+.modal-dialog{
+    max-width: none;
+    width: 80vw;
+    max-height: none;
+    height: 90vh;
+}
+
+.projectThumbnail{
+    height: auto;
+    width: 100%;
+}
+
 #emailbtn{
     background: white;
     border: black solid 2px;
