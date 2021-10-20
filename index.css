@@ -419,8 +419,11 @@ nav img{
 .modal-dialog{
     max-width: none;
     width: 80vw;
-    max-height: none;
-    height: 90vh;
+}
+
+.modal-body{
+    height: 70vh;
+    overflow-y: scroll;
 }
 
 .projectThumbnail{
@@ -599,4 +602,12 @@ nav img{
     width: 50%;
     margin: auto;
     border-radius: 20px;
+}
+
+.websiteLink{
+    color: black;
+}
+
+.vAlign{
+    align-self: center;
 }

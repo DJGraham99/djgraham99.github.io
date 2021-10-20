@@ -265,8 +265,15 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title"> Northumberland Rock Art Project </h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="row">
+                <div class="col-4 vAlign">
+                    <h4 class="modal-title"> Northumberland Rock Art Project </h4>
+                </div>
+                <div class="col-8 vAlign">
+                    <a class="websiteLink" href="https://github.com/DJGraham99/NorthumberlandRockArtProject/projects"> https://github.com/DJGraham99/NorthumberlandRockArtProject.git </a>
+                </div>
+                </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -276,8 +283,36 @@
                 create a responsive website that linked directly to the data. There are several main sections which
                 encompass the clients desires for the website which will be used as subheadings in the following explanation. </p>
 
-                <h4> <strong> Search Results </strong> </h4>
                 <div class="container">
+                    <h4> <strong> User search </strong> </h4>
+
+                    <!-- Search Parameters -->
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            The search section was designed so that it could be usable for all ranges of user technological
+                            ability whilst also having a large selection of search capabilities for more advanced users.
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
+                    <h4> <strong> Search results </strong> </h4>
+                    <!-- Search Results -->
                 <div class="row">
                     <div class="col-4">
                 <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
@@ -289,6 +324,73 @@
                     <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
                     </div>
                 </div>
+                    <div class="row">
+                        <div class="col-12">
+                            In order to best incorporate the needs of the client as well as ensure that the website design was
+                            suited to as wide a range of target audience as possible, the search results were designed to be shown
+                            in three distinct formats: record view, list view and map view. <br>
+                            The record view was created utilising Bootstrap card formats while the map view used Leaflet to display a base map and
+                            then layer the geospatial information on top.
+                        </div>
+                    </div>
+                    <br>
+
+
+
+
+
+
+
+
+                    <h4> <strong> Individual Record Page </strong> </h4>
+
+                    <!-- record pages -->
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            These individual pages are dynamically created from the recorded information in the database.
+                            This requires multiple complex MySQL queries to extract the data and then the use of PHP to
+                            then process and display the data.
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <h4> <strong> User Functionality </strong> </h4>
+
+                    <!-- record pages -->
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                        <div class="col-4">
+                            <img class="projectThumbnail" src="images/NorthumberlandRockArt.JPG">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            In order to provide a service for the widest audience possible. The ability to save panels
+                            was made available for users with and without an account. This was done by utilising JavaScript
+                            local storage for users with no account, and a dedicated user database for those with an account.
+                        </div>
+                    </div>
+                    <br>
+
+
+
                 </div>
             </div>
         </div>
@@ -455,6 +557,7 @@
                                 <p class="tagger tag"> Time management </p>
                                 <p class="tagger tag"> Version control </p>
                                 <p class="tagger tag"> Object-orientated </p>
+                                <p class="tagger tag"> AJAX </p>
 
                             </div>
                         </div>
