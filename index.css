@@ -55,6 +55,11 @@ h2{
     flex-direction: column;
 }
 
+#profilePic{
+    border-radius: 100%;
+    border: black solid 3px;
+}
+
 nav ul{
     padding:0;
     list-style: none;
