@@ -4,6 +4,7 @@ html {
 }
 
 body{
+    transition: all 0.5s;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     margin: 0 0 0 4em;
@@ -56,8 +57,16 @@ h2{
 }
 
 #profilePic{
+    transition: all .5s ease-out;
+    width:80%;
+    margin: auto;
     border-radius: 100%;
-    border: black solid 3px;
+    border: black solid 5px;
+}
+
+#profilePic:hover{
+    width:83%; margin: auto;
+    border: black solid 8px;
 }
 
 nav ul{
@@ -131,6 +140,7 @@ nav li:hover{
 }
 
 .expandID h5{
+    transition: all 0.2s;
     left: 30%;
     position: absolute;
     display: inline-block;
@@ -372,7 +382,9 @@ nav img{
 }
 
 #overlay {
-    transition: .5s ease;
+ /*   display: flex;
+    align-items: center;*/
+    transition: .2s ease;
     position: fixed; /* Sit on top of the page content */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -382,7 +394,6 @@ nav img{
     bottom: 0;
     background-color: white; /* Black background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
 }
 
 
@@ -575,19 +586,18 @@ nav img{
 #sec_about{
     margin-top: 0;
     padding-top: 2em;
-    background-color: #ADD8E6;
-    border-bottom: #192841 solid 5px;
+/*    background-color: #ADD8E6;
+    border-bottom: #192841 solid 5px;*/
   /*  background: rgb(82,205,255);
     background: linear-gradient(180deg, rgba(82,205,255,1) 0%, rgba(242,251,250,1) 85%, rgba(255,255,255,1) 100%);
 */}
 
-#taggerSummary {
-    transform: skewY(11deg);
+/*#taggerSummary {
     margin: auto;
     width: 80%;
-}
+}*/
 
-#summaryBackground{
+#skills{
     transform: skewY(-11deg);
     padding: 3em 0 6em 0;
     background-color: #FFE5B4;
@@ -595,12 +605,16 @@ nav img{
     border-bottom: 5px solid #192841;
 }
 
+#skills h1, #skillsContainer{
+    transform: skewY(11deg);
+}
+
 #tagCloudTitle{
     margin: 0.8em 0 0.5em;
 }
 
 #education{
-    background-color: #ebffe5;
+    background-color: #ADD8E6;
     border-top: #192841 5px solid;
     border-bottom: #192841 5px solid;
 }
@@ -643,4 +657,20 @@ nav img{
 
 .titleID{
     margin: 0.3em 0 0 0;
+}
+
+.tagWrap{
+    display: inline-block;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.tagger{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.tagWrap:hover .tagger{
+    transform: rotateY(360deg);
+    background-color: #ffeae2;
 }
