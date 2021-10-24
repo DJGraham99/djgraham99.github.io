@@ -99,59 +99,59 @@
 
 </script>
 
-<nav id="nav" style="width: 4em;">
+<nav id="nav" style="width: 20em;">
     <div class="links" id="links">
 
         <ul id="sections">
-            <li class="hoverIcon hoverID" onclick="expandNav()"> <a class="expandID"> <i class="fas fa-bars mediumIcon"></i>
-                <h5 class="titleID"> Dylan Graham </h5>
+            <li class="hoverID" onclick="expandNav()"> <a class="expandID expandMenu"> <i class="fas fa-bars mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> Dylan Graham </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Expand</h5>
                 </div>
             </li>
-            <li class="hoverIcon hoverID" onclick="welcomeButton()"> <a class="expandID"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i>
-                <h5 class="titleID"> Home </h5>
+            <li class="hoverID" onclick="welcomeButton()"> <a class="expandID expandMenu"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i>
+                <h5 class="titleID importantDisplay"> Home </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Home</h5>
                 </div>
             </li>
-            <li class="hoverIcon hoverID"><a class="expandID" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
-                <h5 class="titleID"> About </h5>
+            <li class="hoverID"><a class="expandID expandMenu" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> About </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>About</h5>
                 </div></li>
 
-            <li class="hoverIcon hoverID"> <a id="skillsMenu" class="expandID" href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
-                <h5 class="titleID"> Skills </h5>
+            <li class="hoverID"> <a id="skillsMenu" class="expandID expandMenu" href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> Skills </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Skills</h5>
                 </div>
             </li>
-            <li class="hoverIcon hoverID"> <a class="expandID" href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i>
-                <h5 class="titleID"> Portfolio </h5>
+            <li class="hoverID"> <a class="expandID expandMenu" href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> Portfolio </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Portfolio</h5>
                 </div>
             </li>
-            <li class="hoverIcon hoverID"><a class="expandID" href="#education"> <i class="fas fa-book mediumIcon"> </i>
-                <h5 class="titleID"> Education </h5>
+            <li class="hoverID"><a class="expandID expandMenu" href="#education"> <i class="fas fa-book mediumIcon"> </i>
+                <h5 class="titleID importantDisplay"> Education </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Education</h5>
                 </div></li>
-            <li class="hoverIcon hoverID"> <a class="expandID" href="#work"> <i class="fas fa-briefcase mediumIcon"></i>
-                <h5 class="titleID"> Work & Education </h5>
+            <li class="hoverID"> <a class="expandID expandMenu" href="#work"> <i class="fas fa-briefcase mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> Work & Education </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Work & Volunteering</h5>
                 </div></li>
-            <li class="hoverIcon hoverID"> <a class="expandID" href="#contact"> <i class="far fa-address-book mediumIcon"></i>
-                <h5 class="titleID"> Contact Information </h5>
+            <li class="hoverID"> <a class="expandID expandMenu" href="#contact"> <i class="far fa-address-book mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> Contact Information </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Contact Information</h5>
@@ -161,16 +161,16 @@
         </ul>
 
         <ul id="externalLinks">
-            <li class="hoverIcon hoverID"> <a href="https://uk.linkedin.com/in/dylan-graham-compsci" target="_blank" class="expandID"> <i class="fab fa-linkedin mediumIcon"></i>
-                <h5 class="titleID"> LinkedIn </h5>
+            <li class="hoverID"> <a href="https://uk.linkedin.com/in/dylan-graham-compsci" target="_blank" class="expandID expandMenu"> <i class="fab fa-linkedin mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> LinkedIn </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>LinkedIn</h5>
                 </div></li>
 
 
-            <li class="hoverIcon hoverID"> <a href="https://github.com/DJGraham99" target="_blank" class="expandID"> <i class="fab fa-github mediumIcon"></i>
-                <h5 class="titleID"> GitHub </h5>
+            <li class="hoverID"> <a href="https://github.com/DJGraham99" target="_blank" class="expandID expandMenu"> <i class="fab fa-github mediumIcon"></i>
+                <h5 class="titleID importantDisplay"> GitHub </h5>
             </a>
                 <div class="sectionLabel">
                     <h5> GitHub </h5>
@@ -599,11 +599,10 @@
         <!--<h1> About </h1>-->
         <div class="container">
             <div class="row">
-                <div class="col-1"></div>
                 <div class="col-4">
                     <img src="images/meProfilePic.jpg" id="profilePic" >
                 </div>
-                <div class="col-6 text-left vAlign">
+                <div class="col-8 text-left vAlign">
                     <p>My name is Dylan Graham and I am an aspiring software engineer.
                     I hope that this portfolio demonstrates my strengths and interests.
                         As of September 2021 I have now finished my Computer Science MSc and I am now looking
@@ -614,7 +613,6 @@
                         by placing them in a light blue box near the project that that skill was used in.
                     </p>
                 </div>
-                <div class="col-1"></div>
             </div>
         </div>
     </section>
@@ -707,7 +705,7 @@
     <section id="projects" data-aos="fade-up" data-aos-duration="2000">
         <div id="projectsContent">
         <h1> <i class="fas fa-laptop-code"></i> Portfolio </h1>
-            <h6 style="width: 60%; margin: auto"> Below are a few projects which demonstrate my programming capabilities. Clicking on any of the
+            <h6 style="width: 60%; margin: auto; color: white"> Below are a few projects which demonstrate my programming capabilities. Clicking on any of the
             projects will bring up more information.</h6>
 
 
@@ -1193,7 +1191,7 @@ function welcomeButton() {
             <button type="submit" id="emailbtn">Send</button>
         </form>
         </div>
-
+<br><br>
         <div class="topimage">
             <img src="images/newcastle.png">
         </div>

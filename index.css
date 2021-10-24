@@ -7,7 +7,11 @@ body{
     transition: all 0.5s;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    margin: 0 0 0 4em;
+    margin: 0 0 0 20em;
+}
+
+#notIntro{
+    background-color: white;
 }
 
 section{
@@ -61,11 +65,11 @@ h2{
     width:80%;
     margin: auto;
     border-radius: 100%;
-    border: black solid 5px;
+    border: #192841 solid 5px;
 }
 
 #profilePic:hover{
-    width:83%; margin: auto;
+    width:85%; margin: auto;
     border: black solid 8px;
 }
 
@@ -205,6 +209,10 @@ nav img{
     margin: auto;
 }
 
+#explorebutton i{
+    color: white !important;
+}
+
 #optionsContainer{
     border: black solid 2px;
 }
@@ -212,6 +220,7 @@ nav img{
 
 #minimiseButton{
     border: none;
+    color: black;
 }
 
 #explorebutton:hover, #minimiseButton:hover{
@@ -312,7 +321,6 @@ nav img{
     opacity: 50%;
     position: relative;
     margin: auto;
-    top: 5em;
     width: 100%;
 }
 
@@ -321,7 +329,9 @@ nav img{
     opacity: 1;
 }
 
-
+#contact{
+    margin-bottom: 0;
+}
 
 .contactinfo{
     text-align: center;
@@ -478,7 +488,7 @@ nav img{
 
 #overlay {
     background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+    /*background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);*/
 }
 
 #earth{
@@ -592,18 +602,21 @@ nav img{
     background: linear-gradient(180deg, rgba(82,205,255,1) 0%, rgba(242,251,250,1) 85%, rgba(255,255,255,1) 100%);
 */}
 
-/*#taggerSummary {
+#taggerSummary {
     margin: auto;
     width: 80%;
-}*/
+}
+
 
 #skills{
     transform: skewY(-11deg);
     padding: 3em 0 6em 0;
     background-color: #FFE5B4;
-    border-top: 5px solid #192841;
-    border-bottom: 5px solid #192841;
+    border-top: 15px solid #192841;
+    border-bottom: 15px solid #192841;
 }
+
+
 
 #skills h1, #skillsContainer{
     transform: skewY(11deg);
@@ -615,16 +628,17 @@ nav img{
 
 #education{
     background-color: #ADD8E6;
-    border-top: #192841 5px solid;
-    border-bottom: #192841 5px solid;
+    border-top: #192841 15px solid;
+    border-bottom: #192841 15px solid;
+    margin-bottom: 0;
+}
+
+
+#projects {
+  padding-top: 0;
 }
 
 /*
-#projects {
-    background: rgb(255, 216, 70);
-    background: radial-gradient(circle, rgba(255, 216, 70, 1) 0%, rgba(255, 194, 107, 1) 100%);
-}
-
 #projectsContent{
     transform: skewY(-11deg);
 }*/
@@ -655,6 +669,11 @@ nav img{
     word-break: break-all;
 }
 
+#work{
+    background-color: white;
+    margin-top: 0;
+}
+
 .titleID{
     margin: 0.3em 0 0 0;
 }
@@ -673,4 +692,13 @@ nav img{
 .tagWrap:hover .tagger{
     transform: rotateY(360deg);
     background-color: #ffeae2;
+}
+
+.textDarkBackground{
+    color: lightblue;
+}
+
+.tagSummary{
+    border: white solid 2px;
+    box-shadow: 2px 2px white;
 }
