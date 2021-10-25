@@ -65,7 +65,7 @@ h2{
     width:80%;
     margin: auto;
     border-radius: 100%;
-    border: #192841 solid 5px;
+    border: #192841 solid 10px;
 }
 
 #profilePic:hover{
@@ -488,7 +488,7 @@ nav img{
 
 #overlay {
     background: rgb(2, 0, 36);
-    /*background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);*/
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
 }
 
 #earth{
@@ -696,9 +696,4 @@ nav img{
 
 .textDarkBackground{
     color: lightblue;
-}
-
-.tagSummary{
-    border: white solid 2px;
-    box-shadow: 2px 2px white;
 }
