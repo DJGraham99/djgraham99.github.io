@@ -364,10 +364,6 @@ nav img{
     opacity: 80%;
 }
 
-.progress-bar{
-    background-color: lightblue;
-    opacity: 80%;
-}
 
 
 .carousel-indicators{
@@ -475,6 +471,10 @@ nav img{
 .projectThumbnail{
     height: auto;
     width: 60%;
+}
+
+.modal-content{
+    max-height: 80vh;
 }
 
 .modalContainer .row:nth-child(odd){

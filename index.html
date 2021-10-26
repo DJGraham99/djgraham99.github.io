@@ -310,7 +310,7 @@
                     <h4 class="modal-title"> Northumberland Rock Art Project </h4>
                 </div>
                 <div class="col-6 vAlign">
-                    <a class="websiteLink" href="https://github.com/DJGraham99/NorthumberlandRockArtProject/projects" target="_blank"> https://github.com/DJGraham99/NorthumberlandRockArtProject.git </a>
+                    <a class="websiteLink" href="https://github.com/DJGraham99/NorthumberlandRockArtProject" target="_blank"> https://github.com/DJGraham99/NorthumberlandRockArtProject.git </a>
                 </div>
                 </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -325,9 +325,9 @@
                 encompass the clients desires for the website which will be used as subheadings in the following explanation. </p>
 
                 <div class="container modalContainer">
+                    <!-- Search Parameters -->
                     <h4> <strong> User search </strong> </h4>
 
-                    <!-- Search Parameters -->
                     <div class="row">
                         <div class="col-12">
                             <img class="projectThumbnail" src="images/nra_recordsearch.png">
@@ -425,6 +425,8 @@
                     <div class="row">
                         <div class="col-12">
                             This was implemented as an additional functionality as it is not core to the client's specification.
+                            These maps utilise Leaflet and openRouteMap Service API to give walking directions to users to the rock art panels
+                            and any locations stored within the default Nominatim geocoder.
 
                         </div>
                     </div>
@@ -446,7 +448,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            There were several aspects of the project.....
+                            The browse function was implemented to allow users to browse panels if they were less certain of
+                            the specific details of the panel. The current browsing methods are browsing by panel name and
+                            by the type of marking at the site.
                         </div>
                     </div>
                     <br>
@@ -465,7 +469,9 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            There were several aspects of the project.....
+                            A modal was used for all images on the site so that when an image is clicked upon, a JavaScript
+                            function utilises AJAX to gather details about the image and then display the image and details
+                            larger for the user to view.
                         </div>
                     </div>
                     <br>
@@ -495,12 +501,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
+
             <div class="modal-body">
-                <h4> Summary </h4>
+
+                <h4> <strong> Summary </strong> </h4>
                 <p> This project was completed as part of my Computer Science MSc. I completed this project in a group
-                with several others so will only mention the parts of the project that I completed. The whole code
-                is available on GitHub, but it is stated in the code comments who completed which aspects. <br>
-                This project involved creating a website and database for an example food delivery company. The database
+                    with several others so will only mention the parts of the project that I completed. The whole code
+                    is available on GitHub, but it is stated in the code comments who completed which aspects.
+                    This project involved creating a website and database for an example food delivery company. The database
                     would need to be able to store product information and prices, with the capability for users to make
                     an account which would also store their personal details. The physical website would need to have
                     a section for customers and employees. The customer section would allow users to create accounts and
@@ -510,19 +519,14 @@
                     completed. The following information is dividied into the sections that I completed.
                 </p>
 
-                <br>
+
+                <div class="container modalContainer">
                 <h4> <strong> Order Confirmation </strong> </h4>
 
                 <!-- record pages -->
                 <div class="row">
-                    <div class="col-4">
-                        <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
-                    </div>
-                    <div class="col-4">
-                        <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
-                    </div>
-                    <div class="col-4">
-                        <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
+                    <div class="col-12">
+                        <img class="projectThumbnail" src="images/cavalloConfirmation.JPG" style="width: 20%">
                     </div>
                 </div>
                 <div class="row">
@@ -544,25 +548,62 @@
 
                     <!-- record pages -->
                     <div class="row">
-                        <div class="col-4">
-                            <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
-                        </div>
-                        <div class="col-4">
-                            <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
-                        </div>
-                        <div class="col-4">
-                            <img class="projectThumbnail" src="images/cavalloCheckout.JPG">
+                        <div class="col-12">
+                            <img class="projectThumbnail" src="images/driverHomepage.JPG" style="width: 20%">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            text goes here
+                            This page shows all the orders that are currently out for delivery. Each order is assigned to
+                            a driver and the driver can search for their driver code and then mark the delivery as complete
+                            which will then mark the time of completion in the order database.
                         </div>
 
                     </div>
 
-                </div>
                 <br>
+
+            <h4> <strong> Account creation / Login / Logout </strong> </h4>
+
+            <!-- record pages -->
+            <div class="row">
+                <div class="col-12">
+                    <img class="projectThumbnail" src="images/cavalloCreateAccount.JPG" style="width: 20%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    This allows users to input their details in order to create an account and be able to login.
+                    There are several forms of validation set up to ensure data entered is valid. Additional data cleaning is completed to minimise
+                    the risk of SQL injections.
+                </div>
+
+            </div>
+                <br>
+
+
+
+                <h4> <strong> Checkout Page </strong> </h4>
+
+                <!-- record pages -->
+                <div class="row">
+                    <div class="col-12">
+                        <img class="projectThumbnail" src="images/cavalloCreateAccount.JPG" style="width: 20%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        This page was worked on by several people due to this being where many of the website's sections
+                        intertwine. My role within this page was to autofill the data boxes with the users account information
+                        whilst also allowing the data to be changed for that particular order. All inputted information is validated
+                        and filtered. I was then involved with working with people who specialised on the mock payment system to
+                        utilise the information and send it to the API so that it could be further processed.
+                    </div>
+
+                </div>
+                </div>
+
+        </div>
 
 
 
@@ -618,7 +659,7 @@
                 </div>
                 <div class="col-10">
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
                              aria-valuemax="100"></div>
                     </div>
                 </div>
@@ -629,7 +670,7 @@
                 </div>
                 <div class="col-10">
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
                              aria-valuemax="100"></div>
                     </div>
                 </div>
@@ -640,7 +681,7 @@
                 </div>
                 <div class="col-10">
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
                              aria-valuemax="100"></div>
                     </div>
                 </div>
@@ -651,8 +692,9 @@
                 </div>
                 <div class="col-10">
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                             aria-valuemax="100"></div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
                     </div>
                 </div>
             </div>
