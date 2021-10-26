@@ -474,7 +474,15 @@ nav img{
 
 .projectThumbnail{
     height: auto;
-    width: 100%;
+    width: 60%;
+}
+
+.modalContainer .row:nth-child(odd){
+    border-bottom: lightgray solid 5px;
+}
+
+.modalContainer .row{
+    padding: 10px;
 }
 
 #emailbtn{
