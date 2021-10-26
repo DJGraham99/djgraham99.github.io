@@ -364,6 +364,9 @@ nav img{
     opacity: 80%;
 }
 
+.progress-bar{
+    z-index: 3;
+}
 
 
 .carousel-indicators{
