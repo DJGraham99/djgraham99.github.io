@@ -788,14 +788,21 @@ nav img{
     }
 
     nav{
-        width: 4em !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 4em !important;
+    }
+
+    #sections{
+        flex-direction: row;
+        width: 100%;
     }
 
     .expandMenu{
         text-align: center !important;
     }
 
-    #expander{
+    #expander, #homer{
         display: none;
     }
 
@@ -805,6 +812,10 @@ nav img{
 
     #sections{
         height: 100%;
+    }
+
+    nav li{
+        margin: auto;
     }
 
 }
