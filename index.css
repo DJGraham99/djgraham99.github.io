@@ -734,9 +734,7 @@ nav img{
     }
 
 
-    nav{
-        display: none;
-    }
+
 
     body{
         margin: 0px;
@@ -783,6 +781,30 @@ nav img{
 
     .websiteLink{
         font-size: 70%;
+    }
+
+    .titleID{
+        opacity: 0% !important;
+    }
+
+    nav{
+        width: 4em !important;
+    }
+
+    .expandMenu{
+        text-align: center !important;
+    }
+
+    #expander{
+        display: none;
+    }
+
+    #externalLinks{
+        display: none;
+    }
+
+    #sections{
+        height: 100%;
     }
 
 }
