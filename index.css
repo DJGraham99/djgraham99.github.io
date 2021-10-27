@@ -822,4 +822,8 @@ nav img{
         margin-bottom: 2em;
     }
 
+    .progress-bar{
+        background: lightblue !important;
+    }
+
 }
