@@ -75,25 +75,6 @@ h2{
 }
 
 
-@media only screen and (max-width: 768px) {
-
-    body{
-        font-size: 180% !important;
-    }
-
-    #profilePic{
-        width: 50%;
-    }
-
-    #profilePic:hover{
-        width: 60%;
-    }
-
-    p{
-        text-align: center !important;
-    }
-
-}
 
 nav ul{
     padding:0;
@@ -729,4 +710,60 @@ nav img{
 
 .textDarkBackground{
     color: lightblue;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        font-size: 120% !important;
+    }
+
+    #profilePic{
+        width: 50%;
+    }
+
+    #profilePic:hover{
+        width: 60%;
+    }
+
+    p, h4, h5{
+        text-align: center !important;
+    }
+
+    nav{
+        display: none;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contactInfoDiv{
+        width: 95%;
+    }
+
+    #contact{
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #titleDescrip{
+        font-size: 150%;
+    }
+
+    #titleName{
+        margin-top: 0;
+        font-size: 300%;
+    }
+
+    #taggerSummary{
+        width: 100%;
+    }
+
+    .tagWrap, .bottomButton{
+        font-size: 50%;
+    }
+
 }
