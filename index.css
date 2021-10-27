@@ -334,6 +334,7 @@ nav img{
 
 #contact{
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .contactinfo{
@@ -717,7 +718,7 @@ nav img{
 @media only screen and (max-width: 768px) {
 
     body{
-        font-size: 120% !important;
+        font-size: 100% !important;
     }
 
     #profilePic{
@@ -731,6 +732,7 @@ nav img{
     p, h4, h5{
         text-align: center !important;
     }
+
 
     nav{
         display: none;
@@ -765,6 +767,22 @@ nav img{
 
     .tagWrap, .bottomButton{
         font-size: 40%;
+    }
+
+    h1, h2{
+        font-size: 200% !important;
+    }
+
+    #educationContainer{
+        width: 95%;
+    }
+
+    .modal-dialog{
+        width: 96vw;
+    }
+
+    .websiteLink{
+        font-size: 70%;
     }
 
 }
