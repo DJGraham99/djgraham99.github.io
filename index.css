@@ -368,9 +368,6 @@ nav img{
     opacity: 80%;
 }
 
-.progress-bar{
-    z-index: 3;
-}
 
 
 .carousel-indicators{
@@ -824,6 +821,7 @@ nav img{
 
     .progress-bar{
         background: lightblue !important;
+        z-index: 10000;
     }
 
 }
