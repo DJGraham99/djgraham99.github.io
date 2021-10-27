@@ -819,9 +819,4 @@ nav img{
         margin-bottom: 2em;
     }
 
-    .progress-bar{
-        background: lightblue !important;
-        z-index: 10000;
-    }
-
 }
