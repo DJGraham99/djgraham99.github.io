@@ -764,7 +764,7 @@ nav img{
     }
 
     .tagWrap, .bottomButton{
-        font-size: 40%;
+        font-size: 50%;
     }
 
     h1, h2{
@@ -816,6 +816,10 @@ nav img{
 
     nav li{
         margin: auto;
+    }
+
+    #projectRow .col-12{
+        margin-bottom: 2em;
     }
 
 }
