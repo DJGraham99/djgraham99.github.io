@@ -784,7 +784,7 @@ nav img{
     }
 
     .titleID{
-        opacity: 0% !important;
+        display: none !important;
     }
 
     nav{
