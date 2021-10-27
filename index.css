@@ -535,6 +535,7 @@ nav img{
     font-family: 'Amatic SC', cursive;
     color: white;
     font-size: 300%;
+    margin: 0;
 }
 
 #titleDesc, #titleDescrip{
@@ -763,7 +764,7 @@ nav img{
     }
 
     .tagWrap, .bottomButton{
-        font-size: 50%;
+        font-size: 40%;
     }
 
 }
