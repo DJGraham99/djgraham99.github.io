@@ -68,9 +68,31 @@ h2{
     border: #192841 solid 10px;
 }
 
+
 #profilePic:hover{
     width:85%; margin: auto;
     border: black solid 8px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        font-size: 180% !important;
+    }
+
+    #profilePic{
+        width: 50%;
+    }
+
+    #profilePic:hover{
+        width: 60%;
+    }
+
+    p{
+        text-align: center !important;
+    }
+
 }
 
 nav ul{
