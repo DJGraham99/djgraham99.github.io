@@ -16,7 +16,7 @@ body{
 
 section{
     margin: 2em 0;
-    padding: 2em 0;
+    padding: 2em 1em;
 }
 
 #welcome{
@@ -526,7 +526,7 @@ nav img{
     text-shadow: none;
     color: white;
     font-size: 600%;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #exploreText{
@@ -617,7 +617,7 @@ nav img{
 
 #taggerSummary {
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -629,7 +629,9 @@ nav img{
     border-bottom: 15px solid #192841;
 }
 
-
+#workContainer{
+    text-align: left;
+}
 
 #skills h1, #skillsContainer{
     transform: skewY(11deg);
@@ -644,6 +646,7 @@ nav img{
     border-top: #192841 15px solid;
     border-bottom: #192841 15px solid;
     margin-bottom: 0;
+    padding: 1em;
 }
 
 
@@ -731,11 +734,9 @@ nav img{
     }
 
 
-
-
     body{
         margin: 0px;
-        padding: 0px;
+        padding: 0 0 10vh 0;
     }
 
     .contactInfoDiv{
@@ -747,13 +748,8 @@ nav img{
         padding-top: 0;
     }
 
-    #titleDescrip{
-        font-size: 150%;
-    }
-
-    #titleName{
-        margin-top: 0;
-        font-size: 300%;
+    #titleDescrip, #titleName{
+        font-size: 400%;
     }
 
     #taggerSummary{
@@ -761,11 +757,16 @@ nav img{
     }
 
     .tagWrap, .bottomButton{
-        font-size: 50%;
+        font-size: 75%;
     }
 
     h1, h2{
-        font-size: 200% !important;
+        font-size: 200%;
+    }
+
+    #titles{
+        height: 20vh;
+        margin-top: 30vh;
     }
 
     #educationContainer{
@@ -817,6 +818,18 @@ nav img{
 
     #projectRow .col-12{
         margin-bottom: 2em;
+    }
+
+    #workContainer{
+        text-align: center;
+    }
+
+    #picDiv{
+        padding-bottom: 2em;
+    }
+
+    #taggerSummary, #taggerSummary .tagWrap{
+        display: none;
     }
 
 }
