@@ -394,7 +394,7 @@ nav img{
 #overlay {
  /*   display: flex;
     align-items: center;*/
-    transition: .2s ease;
+    transition: .8s ease;
     position: fixed; /* Sit on top of the page content */
     width: 100%; /* Full width (cover the whole page) */
     height: 100%; /* Full height (cover the whole page) */
@@ -404,6 +404,7 @@ nav img{
     bottom: 0;
     background-color: white; /* Black background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    overflow: hidden;
 }
 
 
@@ -765,6 +766,7 @@ nav img{
     }
 
     #titles{
+        transition: .4s ease-in;
         height: 20vh;
         margin-top: 30vh;
     }

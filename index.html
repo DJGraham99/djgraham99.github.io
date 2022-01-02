@@ -1159,24 +1159,12 @@
 
 function welcomeButton() {
     var x = document.getElementById("overlay");
-    var y = document.getElementById("explorebutton")
-    var nodes = x.children
     if (x.style.height === "0%") {
         document.body.classList.add("stopScrolling");
         x.style.height = "100%";
-        y.style.display = "block";
-        for (var i = 0; i < nodes.length; i++) {
-            var node = nodes[i];
-            node.style.display="block";
-        }
     } else {
         document.body.classList.remove("stopScrolling");
-        y.style.display = "none";
         x.style.height = "0%";
-        for (var p = 0; p < nodes.length; p++) {
-            var node2 = nodes[p];
-            node2.style.display = "none";
-        }
     }
 }
 
