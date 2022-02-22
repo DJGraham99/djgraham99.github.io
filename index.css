@@ -7,10 +7,18 @@ body{
     transition: all 0.5s;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    margin: 0 0 0 20em;
+    /*margin: 0 0 0 20em;*/
+    margin: 0;
+}
+
+p{
+    font-size: 18px;
 }
 
 #notIntro{
+    display: none;
+    margin: auto;
+    width: 80%;
     background-color: white;
 }
 
@@ -24,12 +32,13 @@ section{
 }
 
 #nav{
-    transition: width 0.5s;
+    transition: all 0.5s;
     z-index: 2;
     background-color: #192841;
     position: fixed;
     left: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 h1{
@@ -49,6 +58,11 @@ h2{
     width: 100%;
     margin: 0 auto;
     align-content:  center;
+}
+
+section{
+    min-height: 100vh;
+    padding: 2em 0;
 }
 
 #sections{
@@ -205,7 +219,7 @@ nav img{
     margin-top: 0;
 }
 
-#explorebutton, #minimiseButton{
+#minimiseButton{
     opacity: 100%;
     background: none;
     border: none;
@@ -221,18 +235,48 @@ nav img{
 }
 
 
-#minimiseButton{
+.navigationButton{
+    position: fixed;
     border: none;
+    opacity: 50%;
+    background: none;
     color: black;
 }
 
-#explorebutton:hover, #minimiseButton:hover{
+#nextButton{
+    bottom: 0;
+}
+
+#rightButton{
+    right: 0;
+    top: 45vh;
+    display: none;
+}
+
+#leftButton{
+    left: 5em;
+    top: 45vh;
+    display: none;
+}
+
+#maximiseButton:hover, #minimiseButton:hover{
     transition: opacity .5s ease-out;
     opacity: 40%;
 }
 
+.navigationButton:hover{
+    transition: opacity .5s ease-out;
+    opacity: 100%;
+
+}
+
 .largeIcon{
     color: black;
+    font-size: 400%;
+}
+
+.whiteIcon{
+    color: white;
     font-size: 400%;
 }
 
@@ -243,6 +287,16 @@ nav img{
 .noBackground{
     background: none;
     border: none;
+}
+
+#skills{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#skillsContainer{
+    min-width: 80vw;
 }
 
 
@@ -391,27 +445,24 @@ nav img{
     top: 40%;
 }
 
+/*
 #overlay {
- /*   display: flex;
-    align-items: center;*/
+ !*   display: flex;
+    align-items: center;*!
     transition: .8s ease;
-    position: fixed; /* Sit on top of the page content */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed; !* Sit on top of the page content *!
+    width: 100%; !* Full width (cover the whole page) *!
+    height: 100%; !* Full height (cover the whole page) *!
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white; /* Black background with opacity */
-    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    background-color: white; !* Black background with opacity *!
+    z-index: 3; !* Specify a stack order in case you're using a different order for other elements *!
     overflow: hidden;
 }
+*/
 
-
-.stopScrolling{
-    height: 100%;
-    overflow: hidden;
-}
 
 
 #overlayContent{
@@ -499,10 +550,6 @@ nav img{
     margin-bottom: 5px;
 }
 
-#overlay {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
-}
 
 #earth{
     margin: auto;
@@ -608,52 +655,54 @@ nav img{
 }
 
 #sec_about{
+    height: 100vh;
     margin-top: 0;
-    padding-top: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 /*    background-color: #ADD8E6;
     border-bottom: #192841 solid 5px;*/
   /*  background: rgb(82,205,255);
     background: linear-gradient(180deg, rgba(82,205,255,1) 0%, rgba(242,251,250,1) 85%, rgba(255,255,255,1) 100%);
 */}
 
+#aboutContainer{
+    padding-top: 4em;
+}
+
 #taggerSummary {
-    margin: auto;
-    width: 90%;
+    margin: 0;
+    width: 80%;
 }
 
 
-#skills{
-    transform: skewY(-11deg);
-    padding: 3em 0 6em 0;
-    background-color: #FFE5B4;
-    border-top: 15px solid #192841;
-    border-bottom: 15px solid #192841;
+#tagCloudSection{
+    overflow: hidden;
+    float: right;
+    padding:0;
+    display: block;
+    /*background-color: #FFE5B4;*/
 }
 
 #workContainer{
     text-align: left;
 }
 
-#skills h1, #skillsContainer{
+/*#summaryBackground{
     transform: skewY(11deg);
-}
+}*/
 
 #tagCloudTitle{
     margin: 0.8em 0 0.5em;
 }
 
 #education{
-    background-color: #ADD8E6;
-    border-top: #192841 15px solid;
-    border-bottom: #192841 15px solid;
+ /*   background-color: #ADD8E6;*/
     margin-bottom: 0;
     padding: 1em;
 }
 
 
-#projects {
-  padding-top: 0;
-}
 
 /*
 #projectsContent{
@@ -834,4 +883,127 @@ nav img{
         display: none;
     }
 
+}
+
+#intro{
+    overflow: hidden;
+}
+
+#intro_sec{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#introContainer{
+    background: #192841;
+    height: 100%;
+    max-width: none;
+}
+
+
+#introContainer .col{
+    border: black solid 1px;
+    padding: 0;
+}
+
+/*#introContainer .h2{
+    z-index: 4;
+}*/
+
+#introContainer .col:hover{
+    border: black solid 8px;
+    transition: all 1s;
+}
+
+#introContainer .col:hover .backgroundImage{
+    transition: all 1s;
+    filter: blur(3px);
+}
+
+#introContainer .row{
+    height: 30vh;
+}
+
+#introContainer h2{
+    background: white;
+    border: black solid 2px;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    width: 60%;
+    opacity: 80%;
+}
+
+.backgroundImage{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.highlighted{
+    border: white solid 3px;
+    background-color: white;
+}
+
+.highlighted a{
+    color: black;
+}
+
+section{
+    display: none;
+}
+
+#intro_sec{
+    display: block;
+}
+
+.centreText{
+    text-align: center;
+    margin: 0;
+}
+
+#skills, #tagCloudSection{
+    overflow: hidden;
+    padding: 0;
+}
+
+#skills{
+    transition: all 1s;
+}
+
+
+#leftButton.active ~ #tagCloudSection{
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-direction: reverse;
+}
+
+
+#tagCloudSection{
+    display: none;
+    animation-duration: 1s;
+    animation-name: slidein;
+
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#tagCloudSection{
+    width: 0;
+    position: absolute;
+    top: 2em;
 }

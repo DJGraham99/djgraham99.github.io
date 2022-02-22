@@ -87,59 +87,59 @@
 
 </script>
 
-<nav id="nav" style="width: 20em;">
+<nav id="nav" style="width: 0;">
     <div class="links" id="links">
 
         <ul id="sections">
-            <li id="expander" class="hoverID" onclick="expandNav()"> <a class="expandID expandMenu"> <i class="fas fa-bars mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> Dylan Graham </h5>
+            <li id="expander" class="hoverID hoverIcon" onclick="expandNav()"> <a class="expandID"> <i class="fas fa-bars mediumIcon"></i>
+                <h5 class="titleID"> Dylan Graham </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Expand</h5>
                 </div>
             </li>
-            <li id="homer" class="hoverID" onclick="welcomeButton()"> <a class="expandID expandMenu"> <i class="fa fa-home mediumIcon" aria-hidden="true"></i>
-                <h5 class="titleID importantDisplay"> Home </h5>
+            <li id="homer" class="hoverID hoverIcon" onclick="welcomeButton('')"> <a class="expandID "> <i class="fa fa-home mediumIcon" aria-hidden="true"></i>
+                <h5 class="titleID "> Home </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Home</h5>
                 </div>
             </li>
-            <li class="hoverID"><a class="expandID expandMenu" href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> About </h5>
+            <li id="about" class="hoverID hoverIcon" onclick="aboutNext('', 'sec_about')"> <a class="expandID " href="#sec_about"> <i class="fas fa-user-tie mediumIcon"></i>
+                <h5 class="titleID "> About </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>About</h5>
                 </div></li>
 
-            <li class="hoverID"> <a id="skillsMenu" class="expandID expandMenu" href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> Skills </h5>
+            <li id="skillsIcon" class="hoverID hoverIcon" onclick="aboutNext('', 'skills')" value="skills"> <a id="skillsMenu" class="expandID " href="#skills"> <i class="fas fa-lightbulb mediumIcon"></i>
+                <h5 class="titleID "> Skills </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Skills</h5>
                 </div>
             </li>
-            <li class="hoverID"> <a class="expandID expandMenu" href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> Portfolio </h5>
+            <li id="portfolioIcon"  class="hoverID hoverIcon" onclick="aboutNext('', 'projects')" value="projects"> <a class="expandID " href="#projects"> <i class="fas fa-laptop-code mediumIcon"></i>
+                <h5 class="titleID "> Portfolio </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Portfolio</h5>
                 </div>
             </li>
-            <li class="hoverID"><a class="expandID expandMenu" href="#education"> <i class="fas fa-book mediumIcon"> </i>
-                <h5 class="titleID importantDisplay"> Education </h5>
+            <li id="educationIcon"  class="hoverID hoverIcon" onclick="aboutNext('', 'education')" value="education"> <a class="expandID " href="#education"> <i class="fas fa-book mediumIcon"> </i>
+                <h5 class="titleID "> Education </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Education</h5>
                 </div></li>
-            <li class="hoverID"> <a class="expandID expandMenu" href="#work"> <i class="fas fa-briefcase mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> Work & Education </h5>
+            <li id="workIcon"  class="hoverID hoverIcon" onclick="aboutNext('', 'work')" value="work"> <a class="expandID " href="#work"> <i class="fas fa-briefcase mediumIcon"></i>
+                <h5 class="titleID "> Work & Volunteering </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Work & Volunteering</h5>
                 </div></li>
-            <li class="hoverID"> <a class="expandID expandMenu" href="#contact"> <i class="far fa-address-book mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> Contact Information </h5>
+            <li id="contactIcon"  class="hoverID hoverIcon" onclick="aboutNext('', 'contact')" value="contact"> <a class="expandID " href="#contact"> <i class="far fa-address-book mediumIcon"></i>
+                <h5 class="titleID "> Contact Information </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>Contact Information</h5>
@@ -149,16 +149,16 @@
         </ul>
 
         <ul id="externalLinks">
-            <li class="hoverID"> <a href="https://uk.linkedin.com/in/dylan-graham-compsci" target="_blank" class="expandID expandMenu"> <i class="fab fa-linkedin mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> LinkedIn </h5>
+            <li class="hoverID hoverIcon"> <a href="https://uk.linkedin.com/in/dylan-graham-compsci" target="_blank" class="expandID "> <i class="fab fa-linkedin mediumIcon"></i>
+                <h5 class="titleID "> LinkedIn </h5>
             </a>
                 <div class="sectionLabel">
                     <h5>LinkedIn</h5>
                 </div></li>
 
 
-            <li class="hoverID"> <a href="https://github.com/DJGraham99" target="_blank" class="expandID expandMenu"> <i class="fab fa-github mediumIcon"></i>
-                <h5 class="titleID importantDisplay"> GitHub </h5>
+            <li class="hoverID hoverIcon"> <a href="https://github.com/DJGraham99" target="_blank" class="expandID "> <i class="fab fa-github mediumIcon"></i>
+                <h5 class="titleID "> GitHub </h5>
             </a>
                 <div class="sectionLabel">
                     <h5> GitHub </h5>
@@ -170,103 +170,7 @@
     </div>
 </nav>
 
-<body class="stopScrolling" id="body">
-
-
-<div id="overlayWrapper">
-    <div id="overlay">
-        <img src="images/inProgress.png" style="width: 20vw; position: absolute; right: 10vw">
-        <div id="titles">
-        <h1 id="titleName"> Dylan Graham </h1>
-        <h6 id="titleDescrip"> Online CV and Portfolio </h6>
-        </div>
-        <div id="taggerSummary">
-        </div>
-
-        <!--<div class="container">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-4">
-                    <img src="images/meProfilePic.jpg" id="profilePic" >
-                </div>
-                <div class="col-6 text-center vAlign">
-                    <h5 style="color: white">My name is Dylan Graham and I am an aspiring software engineer.
-                        I hope that this portfolio demonstrates my strengths and interests.
-                        As of September 2021 I have now finished my Computer Science MSc and I am now looking
-                        to move into a software engineering role.
-                        <br>
-
-                        Throughout this website I will highlight my strengths and where they are demonstrated
-                        by placing them in a light blue box near the project that that skill was used in.
-                    </h5>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>-->
-
-        <!--<div id="overlayContent">
-        <h1 id="titleName"> Dylan Graham </h1>
-            <h5 id="titleDesc"> Computer Science Graduate </h5>
-            <h6 id="titleDescrip"> Online CV and Portfolio </h6>
-
-
-
-            <i class="fas fa-star" style="left: 10vw; top: 30vh; animation-delay: 0.5s"></i>
-            <i class="fas fa-star" style="left: 30vw; top: 35vh; animation-delay: 0.5s"></i>
-            <i class="fas fa-star" style="left: 80vw; top: 26vh; animation-delay: 0.5s"></i>
-
-            <i class="fas fa-star" style="left: 16vw; top: 20vh; animation-delay: 1s "></i>
-            <i class="fas fa-star" style="left: 89vw; top: 10vh; animation-delay: 1s"> </i>
-            <i class="fas fa-star" style="left: 48vw; top: 7vh; animation-delay: 1s"></i>
-
-            <i class="fas fa-star" style="left: 5vw; top: 5vh; animation-delay: 0.75s"></i>
-            <i class="fas fa-star" style="left: 92vw; top: 8vh; animation-delay: 0.75s"> </i>
-            <i class="fas fa-star" style="left: 60vw; top: 2vh; animation-delay: 0.75s"></i>
-
-            <i class="fas fa-star" style="left: 25vw; top: 8vh;"></i>
-            <i class="fas fa-star" style="left: 75vw; top: 13vh;"> </i>
-            <i class="fas fa-star" style="left: 92vw; top: 34vh;"></i>
-
-       &lt;!&ndash; <h3> Welcome to my online CV and portfolio! I hope that this site demonstrates my commitment and passion for
-            software engineering. Please enjoy browsing! </h3>
-&ndash;&gt;
-
-           &lt;!&ndash; <div class="container" id="optionsContainer">
-                <div class="row">
-                    <div class="col-4 square border" style="border-radius: 20px 0 0 0;">
-                        <a onclick="welcomeButton()" href="#skills"> <h3> <i class="fas fa-lightbulb mediumIcon"></i> Key Skills </h3> </a>
-                    </div>
-                    <div class="col-4 square border">
-                        <a onclick="welcomeButton()" href="#projects"> <h3> <i class="fas fa-laptop-code mediumIcon"></i> Portfolio </h3> </a>
-                    </div>
-                    <div class="col-4 square border" style="border-radius: 0 20px 0 0;">
-                        <a onclick="welcomeButton()" href="#education">  <h3> <i class="fas fa-book mediumIcon"> </i> Education </h3> </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 square border" style="border-radius: 0 0 0 20px;">
-                        <a onclick="welcomeButton()" href="#work"> <h3> <i class="fas fa-briefcase mediumIcon"></i> Work & Volunteering </h3> </a>
-                    </div>
-                    <div class="col-4 square border">
-                        <a onclick="welcomeButton()" href="#sec_about"> <h3> <i class="fas fa-user-tie mediumIcon"></i> About Me </h3> </a>
-                    </div>
-                    <div class="col-4 square border" style="border-radius: 0 0 20px 0;">
-                        <a onclick="welcomeButton()" href="#contact"> <h3> <i class="far fa-address-book mediumIcon"></i> Contact Me</h3> </a>
-                    </div>
-                </div>
-            </div> -->
-
-
-
-<div class="bottomButton">
-        <button id="explorebutton" onclick="welcomeButton()">
-            <h3 id="exploreText"> Explore </h3>
-            <i class="fas fa-angle-down largeIcon"></i>
-        </button>
-</div>
-        </div>
-    </div>
-</div>
+<body id="body" onscroll="scrollSections()">
 
 
 
@@ -601,40 +505,114 @@
 </div>
 
 
+<div id="intro" style="height: 100vh;">
+    <section id="intro_sec">
+        <div class="container" id="introContainer">
+            <div class="row">
+                <div class="col col-3">
+                    <div class="backgroundImage" style="background-image: url('images/meProfilePic.jpg');">
+                    </div>
+
+                    <h2> About </h2>
+                </div>
+                <div class="col col-9">
+                    <div class="backgroundImage" style="background-image: url('images/skills.png')">
+                    </div>
+                    <h2> Key Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col col-9">
+                <div class="backgroundImage" style="background-image: url('images/coding.jpg')">
+                </div>
+                <h2> Portfolio </h2>
+            </div>
+            <div class="col col-3">
+                <div class="backgroundImage" style="background-image: url('images/nottingham.jpg')">
+                </div>
+                <h2> Education </h2>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col col-6">
+                    <div class="backgroundImage" style="background-image: url('https://i.imgur.com/lL6tQfy.png')">
+                    </div>
+                <h2> Work & Volunteering </h2>
+            </div>
+            <div class="col col-6" >
+                <div class="backgroundImage" style="background-image: url('https://i.imgur.com/lL6tQfy.png')">
+                </div>
+                <h2> Contact Information </h2>
+            </div>
+            </div>
+            <button id="minimiseButton" onclick="welcomeButton('intro')">
+           <i class="fas fa-angle-down whiteIcon"></i>
+       </button>
+        </div>
+    </section>
+</div>
+
 
 <div id="notIntro">
 
-    <section id="sec_about" data-aos="fade-up" data-aos-duration="2000">
-        <button id="minimiseButton" onclick="welcomeButton()">
-            <i class="fas fa-angle-down largeIcon"></i>
-        </button>
+
+    <button id="maximiseButton" class="navigationButton" onclick="welcomeButton('sec_about')">
+        <i class="fas fa-angle-up largeIcon"></i>
+        <h1> </h1>
+    </button>
+    <section id="sec_about"  data-aos-duration="2000">
         <!--<h1> About </h1>-->
-        <div class="container">
+        <div class="container" id="aboutContainer">
+            <h1 class="centreText"> About me </h1>
             <div class="row">
                 <div class="col-12 col-md-4" id="picDiv">
                     <img src="images/meProfilePic.jpg" id="profilePic" >
                 </div>
                 <div class="col-12 col-md-8 text-left vAlign">
-                    <p>My name is Dylan Graham and I am an aspiring software engineer.
-                        As of September 2021 I have now finished my Computer Science MSc and I am now looking
-                        to move into a software engineering role. The aim of this website is to demonstrate my proficiency
-                        for this role through highlighting where my skills have developed throughout my education and work.
-                        <br>
-                        Specific skills are displayed in blue boxes and a tag cloud summary of these skills mentioned can be seen on the landing page of this
-                        site. Please enjoy browsing my site and projects!
+                    <h3> Who am I?</h3>
+                    <p>My name is Dylan Graham, and I am looking to move into an exciting technology role following
+                        my successful completion of my Computer Science MSc from Newcastle University.
                     </p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em">
+                <div class="col-6 text-left">
+                    <h3> What are my qualifications? </h3>
+                    <p> I have an undergraduate degree in humanities and a post-graduate degree in Computer Science.
+                    I have completed several online courses and I am proficient in multiple coding languages.</p>
+                </div>
+                <div class="col-6 text-left">
+                    <h3> What are my aspirations? </h3>
+                    <p> I feel that I have learnt a lot during my education and am now looking to expand my skillset by
+                    moving into employment. I would really like a job with room to grow and learn new things. I hope
+                    that in a few years I will have been able to take the lead on projects and really found my specialty
+                    in regards to Computer Science.</p>
                 </div>
             </div>
         </div>
     </section>
+    <button id="nextButton" class="navigationButton" onclick="aboutNext('sec_about', 'skills')">
+        <!--  <h4 style="margin: 0; padding: 0; text-align: center"> Skills </h4>-->
+        <i class="fas fa-angle-down largeIcon"></i>
+    </button>
+
+    <button id="rightButton" class="navigationButton" onclick="tagExpand()">
+        <h4 style="margin: 0; padding: 0; float: left" class="vAlign"> Tag <br> cloud </h4>
+        <i class="fas fa-angle-right largeIcon"></i>
+    </button>
+    <button id="leftButton" class="navigationButton" onclick="tagExpand()">
+        <h4 style="margin: 0; padding: 0; float: right" class="vAlign"> Key <br> skills </h4>
+        <i class="fas fa-angle-left largeIcon"></i>
+    </button>
 
 
 
 
 
-    <section id="skills" data-aos="fade-up" data-aos-duration="2000">
 
-        <h1> <i class="fas fa-lightbulb"></i> Key Skills </h1>
+    <section id="skills"  data-aos-duration="2000">
+
+       <h1 style="margin: 0; padding-top: 2em;"> <i class="fas fa-lightbulb"></i> Key Skills </h1>
 
         <div class="container" id="skillsContainer">
             <div class="row">
@@ -704,17 +682,20 @@
         </div>
     </section>
 
+    <section id="tagCloudSection">
     <div id="summaryBackground">
-        <!--<div id="taggerSummary">
+
+      <div id="taggerSummary">
             <h1 id="tagCloudTitle"> Key Skills Tag Cloud </h1>
             <h6> This diagram shows the skills demonstrated in my cv and the frequency of their use throughout the page. <br> (Larger = More frequent) </h6>
-        </div>-->
+        </div>
         <br>
     </div>
+    </section>
 
 <br> <br>
 
-    <section id="projects" data-aos="fade-up" data-aos-duration="2000">
+    <section id="projects"  data-aos-duration="2000">
         <div id="projectsContent">
         <h1> <i class="fas fa-laptop-code"></i> Portfolio </h1>
             <h6 style="width: 60%; margin: auto;"> Below are a few projects which demonstrate my programming capabilities. Clicking on any of the
@@ -809,7 +790,7 @@
 
 
         <h2> Java Basics </h2>
-        <div class="container" id="javaContainer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container" id="javaContainer"  data-aos-duration="2000">
 
             <!--Carousel Wrapper-->
             <div id="multi-item-carousel2" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
@@ -940,7 +921,7 @@
     </section>
 
 
-    <section id="education" data-aos="fade-up" data-aos-duration="2000">
+    <section id="education"  data-aos-duration="2000">
         <h1> <i class="fas fa-book"></i> Education </h1>
 
         <div class="container" id="educationContainer">
@@ -1024,7 +1005,7 @@
 
 
 
-    <section id="work" data-aos="fade-up" data-aos-duration="2000">
+    <section id="work"  data-aos-duration="2000">
         <h1> <i class="fas fa-briefcase"></i> Previous Employment and Volunteering </h1>
         <div class="container" id="workContainer">
             <div class="row">
@@ -1157,7 +1138,7 @@
         }
     }*/
 
-function welcomeButton() {
+/*function welcomeButton() {
     var x = document.getElementById("overlay");
     if (x.style.height === "0%") {
         document.body.classList.add("stopScrolling");
@@ -1166,12 +1147,263 @@ function welcomeButton() {
         document.body.classList.remove("stopScrolling");
         x.style.height = "0%";
     }
+}*/
+
+
+function scrollSections(){
+    var about = document.getElementById("sec_about");
+    var aboutIcon = document.getElementById("about");
+
+    var skills = document.getElementById("skills");
+    var skillsIcon = document.getElementById("skillsIcon");
+
+    var portfolio = document.getElementById("projects");
+    var portfolioIcon = document.getElementById("portfolioIcon");
+
+    var education = document.getElementById("education");
+    var educationIcon = document.getElementById("educationIcon");
+
+    var work = document.getElementById("work");
+    var workIcon = document.getElementById("workIcon");
+
+    var cont = document.getElementById("contact");
+    var contactIcon = document.getElementById("contactIcon");
+
+    sideBarID(about, aboutIcon,'sec_about');
+    sideBarID(skills, skillsIcon,'skills');
+    sideBarID(portfolio, portfolioIcon,'projects');
+    sideBarID(education, educationIcon,'education');
+    sideBarID(work, workIcon,'work');
+    sideBarID(cont, contactIcon,'contact');
+
+    const rect = portfolio.getBoundingClientRect();
+}
+
+function sideBarID(about, aboutIcon, current){
+    var right = document.getElementById("rightButton");
+    var previous = document.getElementById("maximiseButton");
+    var next = document.getElementById("nextButton");
+    var previousl;
+    var nextl;
+
+    switch(current){
+        case "sec_about":
+            previousl = 'home';
+            nextl = 'skills';
+            break;
+
+        case "skills":
+            previousl = 'sec_about';
+            nextl = 'projects';
+            break;
+
+        case "projects":
+            previousl = 'skills';
+            nextl = 'education';
+            break;
+
+        case "education":
+            previousl = 'projects';
+            nextl = 'work';
+            break;
+
+        case "work":
+            previousl = 'education';
+            nextl = 'contact';
+            break;
+
+        case "contact":
+            previousl = 'work';
+            nextl = 'sec_about';
+            break;
+    }
+
+    if ((isInViewport(about)) && (about.style.display ==="block")){
+        aboutIcon.classList.add("highlighted");
+        if (current === "sec_about"){
+            previous.setAttribute("onClick", "javascript: welcomeButton('sec_about')");
+            next.setAttribute("onClick", "javascript: aboutNext('" + current + "', '" + nextl + "');");
+        }
+        else {
+            previous.setAttribute("onClick", "javascript: aboutNext('" + current + "', '" + previousl + "');");
+            next.setAttribute("onClick", "javascript: aboutNext('" + current + "', '" + nextl + "');");
+        }
+        if (current === "skills") {
+            right.style.display = "block";
+        } else {
+            right.style.display = "none";
+        }
+
+    }
+    else{
+        aboutIcon.classList.remove("highlighted");
+    }
+}
+
+function welcomeButton(page){
+
+    if (page === ""){
+        var g = document.getElementsByClassName("highlighted");
+        var currentV = g[0].childNodes[1];
+        page = currentV.getAttribute("href").substring(1);
+    }
+
+    var y = document.getElementById("intro")
+    var x = document.getElementById("notIntro");
+    const t = document.getElementById("sec_about");
+    var nav = document.getElementById("nav");
+    var pageC = document.getElementById(page);
+    if (y.style.height === "100vh") {
+        x.style.display = "block";
+        nav.style.width = "4em";
+        t.style.display = "block";
+        t.scrollIntoView();
+        setTimeout(() => { y.style.height="0"; }, 800);
+    }
+    else{
+        if (pageYOffset === 0){
+            window.scrollTo(0,1);
+        }
+        setTimeout(() => {  y.style.height = "100vh";
+            window.scrollTo(0,0);
+            topTimeout(pageC)
+        }, 100);
+
+    }
+}
+
+function aboutNext(current, next){
+    if (current === ""){
+        var g = document.getElementsByClassName("highlighted");
+        var currentV = g[0].childNodes[1];
+        current = currentV.getAttribute("href").substring(1);
+    }
+
+    var t = document.getElementById(current);
+    var e = document.getElementById(next);
+    var right = document.getElementById("rightButton");
+
+    if (pageYOffset === 0){
+        window.scrollTo(0,1);
+    }
+    setTimeout(() => {
+
+        if (e.style.display !== "block"){
+            e.style.display = "block";
+            e.scrollIntoView();
+            timeout(t, e);
+        }
+        else if (t.style.display !== "block"){
+            right.style.display="none";
+            t.style.display = "block";
+            t.scrollIntoView();
+            timeout(e, t);
+        }
+
+    }, 200);
+}
+
+function topTimeout(current){
+    var body = document.getElementById("body");
+    var y = document.getElementById("intro")
+    var x = document.getElementById("notIntro");
+    var nav = document.getElementById("nav");
+
+    setTimeout(() => {
+        if (isInViewport(y)) {
+            nav.style.width = "0%";
+            body.style.marginLeft = "0";
+            x.style.display = "none";
+            current.style.display = "none";
+        }
+        else{
+            topTimeout();
+        }
+    }, 700);
+}
+
+function timeout(current, next){
+    setTimeout(() => {
+        if (isInViewport(next)) {
+            current.style.display = "none";
+        }
+        else{
+            timeout(current, next);
+        }
+    }, 700);
+}
+
+function tagExpand(){
+    const skills = document.getElementById("skills");
+    const tag = document.getElementById("tagCloudSection");
+    const body = document.getElementById("body");
+    const right = document.getElementById("rightButton");
+    const up = document.getElementById("maximiseButton");
+    const down = document.getElementById("nextButton");
+    const left = document.getElementById("leftButton");
+
+
+    if (skills.style.width!=="0%"){
+        skills.style.width="0%";
+
+            tag.style.display="block";
+            tag.style.width="100vw";
+            right.style.display="none";
+            up.style.display = "none";
+            down.style.display = "none";
+            left.style.display="block";
+
+    }
+
+    else{
+        tag.style.width="0%";
+
+
+            skills.style.width="100%";
+            right.style.display="block";
+            up.style.display = "inline-block";
+            down.style.display = "inline-block";
+            left.style.display="none";
+
+        setTimeout(() => {
+            tag.style.display="none";
+        }, 100);
+
+    }
+}
+
+/*
+function bodyScroll() {
+    var scrollTimer = -1;
+
+    if (scrollTimer !== -1)
+        clearTimeout(scrollTimer);
+        scrollTimer = window.setTimeout("scrollFinished()", 700);
+}
+
+function scrollFinished() {
+    var y = document.getElementById("intro");
+    var body = document.getElementById("body");
+    y.style.height = "0";
+}*/
+
+
+/*not my code, all credit goes to
+https://www.javascripttutorial.net/dom/css/check-if-an-element-is-visible-in-the-viewport/*/
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top <= ((window.innerHeight/2) || (document.documentElement.clientHeight/2))  &&
+        rect.left >= 0 &&
+        rect.bottom >= 0  &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
 
 </script>
 
 
-<!--<section id="sec_about" data-aos="fade-up" data-aos-duration="2000">
+<!--<section id="sec_about"  data-aos-duration="2000">
     <div class="typewriter">
         <h1>About Me</h1>
     </div>
@@ -1196,7 +1428,7 @@ function welcomeButton() {
 
 </section>-->
 
-    <section id="contact" data-aos="fade-up" data-aos-duration="2000">
+    <section id="contact"  data-aos-duration="2000">
         <div class="contactInfoDiv">
         <h1> <i class="far fa-address-book"></i> Contact Information </h1>
         <p> Contact Number: <b> 07387382553 </b></p>
