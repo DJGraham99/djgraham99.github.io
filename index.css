@@ -44,7 +44,7 @@ section{
 h1{
     color: #192841;
     text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-    margin: 1em 0;
+    margin: 0 0 1em;
     font-family: 'Sora', sans-serif;
 }
 
@@ -236,6 +236,7 @@ nav img{
 
 
 .navigationButton{
+    z-index: 3000000;
     position: fixed;
     border: none;
     opacity: 50%;

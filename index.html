@@ -510,37 +510,37 @@
         <div class="container" id="introContainer">
             <div class="row">
                 <div class="col col-3">
-                    <div class="backgroundImage" style="background-image: url('images/meProfilePic.jpg');">
+                    <div class="backgroundImage">
                     </div>
 
                     <h2> About </h2>
                 </div>
                 <div class="col col-9">
-                    <div class="backgroundImage" style="background-image: url('images/skills.png')">
+                    <div class="backgroundImage">
                     </div>
                     <h2> Key Skills</h2>
                 </div>
             </div>
             <div class="row">
             <div class="col col-9">
-                <div class="backgroundImage" style="background-image: url('images/coding.jpg')">
+                <div class="backgroundImage">
                 </div>
                 <h2> Portfolio </h2>
             </div>
             <div class="col col-3">
-                <div class="backgroundImage" style="background-image: url('images/nottingham.jpg')">
+                <div class="backgroundImage">
                 </div>
                 <h2> Education </h2>
             </div>
             </div>
             <div class="row">
                 <div class="col col-6">
-                    <div class="backgroundImage" style="background-image: url('https://i.imgur.com/lL6tQfy.png')">
+                    <div class="backgroundImage">
                     </div>
                 <h2> Work & Volunteering </h2>
             </div>
             <div class="col col-6" >
-                <div class="backgroundImage" style="background-image: url('https://i.imgur.com/lL6tQfy.png')">
+                <div class="backgroundImage">
                 </div>
                 <h2> Contact Information </h2>
             </div>
@@ -576,12 +576,12 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 1em">
-                <div class="col-6 text-left">
+                <div class="col-12 col-md-6 text-left">
                     <h3> What are my qualifications? </h3>
                     <p> I have an undergraduate degree in humanities and a post-graduate degree in Computer Science.
                     I have completed several online courses and I am proficient in multiple coding languages.</p>
                 </div>
-                <div class="col-6 text-left">
+                <div class="col-12 col-md-6 text-left">
                     <h3> What are my aspirations? </h3>
                     <p> I feel that I have learnt a lot during my education and am now looking to expand my skillset by
                     moving into employment. I would really like a job with room to grow and learn new things. I hope
@@ -922,7 +922,7 @@
 
 
     <section id="education"  data-aos-duration="2000">
-        <h1> <i class="fas fa-book"></i> Education </h1>
+        <h1 style=""> <i class="fas fa-book"></i> Education </h1>
 
         <div class="container" id="educationContainer">
             <div class="row">
@@ -1290,13 +1290,13 @@ function aboutNext(current, next){
 
         if (e.style.display !== "block"){
             e.style.display = "block";
-            e.scrollIntoView();
+            e.scrollIntoView(true);
             timeout(t, e);
         }
         else if (t.style.display !== "block"){
             right.style.display="none";
             t.style.display = "block";
-            t.scrollIntoView();
+            t.scrollIntoView(true);
             timeout(e, t);
         }
 
@@ -1308,6 +1308,10 @@ function topTimeout(current){
     var y = document.getElementById("intro")
     var x = document.getElementById("notIntro");
     var nav = document.getElementById("nav");
+
+    if (nav.style.width !== "4em;"){
+        expandNav();
+    }
 
     setTimeout(() => {
         if (isInViewport(y)) {
@@ -1330,7 +1334,7 @@ function timeout(current, next){
         else{
             timeout(current, next);
         }
-    }, 700);
+    }, 900);
 }
 
 function tagExpand(){
