@@ -154,6 +154,10 @@ nav li:hover{
     background-color: white;
 }
 
+nav:hover{
+    overflow: visible;
+}
+
 .textOptions{
     display: block !important;
     float: right;
@@ -297,7 +301,7 @@ nav img{
 }
 
 #skillsContainer{
-    min-width: 80vw;
+    min-width: 70vw;
 }
 
 
@@ -401,10 +405,7 @@ nav img{
 
 
 #educationContainer{
-    padding: 2em;
     text-align: left;
-    border: black solid 4px;
-    border-radius: 3em;
 }
 
 #modules{
@@ -710,18 +711,9 @@ nav img{
     transform: skewY(-11deg);
 }*/
 
-#educationContainer {
-    background-color: white;
-    box-shadow: black 5px 5px;
-}
-
 .contactInfoDiv{
-    box-shadow: black 5px 5px;
-    background: #FFFCC9;
-    border: #192841 solid 5px;
-    width: 50%;
+    width: 80%;
     margin: auto;
-    border-radius: 20px;
 }
 
 .websiteLink{
@@ -780,7 +772,11 @@ nav img{
         width: 60%;
     }
 
-    p, h4, h5{
+    #nextButton, #rightButton, #maximiseButton{
+        display: none;
+    }
+
+    p, h4, h5, h3, h2{
         text-align: center !important;
     }
 
@@ -976,18 +972,29 @@ section{
 }
 
 
-#leftButton.active ~ #tagCloudSection{
+#leftButton-active~#tagCloudSection{
     animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: reverse;
+    animation-name: slideout;
 }
+
+@keyframes slideout {
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 300%;
+    }
+}
+
 
 
 #tagCloudSection{
     display: none;
     animation-duration: 1s;
     animation-name: slidein;
-
 }
 
 

@@ -682,7 +682,7 @@
         </div>
     </section>
 
-    <section id="tagCloudSection">
+    <section id="tagCloudSection" class="gone">
     <div id="summaryBackground">
 
       <div id="taggerSummary">
@@ -1309,7 +1309,7 @@ function topTimeout(current){
     var x = document.getElementById("notIntro");
     var nav = document.getElementById("nav");
 
-    if (nav.style.width !== "4em;"){
+    if (nav.style.width === "20em"){
         expandNav();
     }
 
@@ -1356,10 +1356,12 @@ function tagExpand(){
             up.style.display = "none";
             down.style.display = "none";
             left.style.display="block";
+            tag.classList.remove("gone");
 
     }
 
     else{
+        tag.classList.add("gone");
         tag.style.width="0%";
 
 
