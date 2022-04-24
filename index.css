@@ -743,6 +743,12 @@ nav img{
 
 @media only screen and (max-width: 768px) {
 
+    .sectionLabel{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
     body{
         font-size: 100% !important;
     }
