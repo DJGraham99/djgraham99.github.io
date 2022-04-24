@@ -749,6 +749,10 @@ nav img{
         width: 0;
     }
 
+    .hoverIcon:hover .sectionLabel{
+        display: none;
+    }
+
     body{
         font-size: 100% !important;
     }
