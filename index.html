@@ -1259,6 +1259,15 @@ function welcomeButton(page){
         page = currentV.getAttribute("href").substring(1);
     }
 
+    var j = document.getElementById("minimiseButton");
+    if (page === "intro"){
+        j.style.display="none";
+    }
+
+    if (page !== "intro"){
+        j.style.display="block";
+    }
+
     var y = document.getElementById("intro")
     var x = document.getElementById("notIntro");
     const t = document.getElementById("sec_about");
