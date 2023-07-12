@@ -1,0 +1,56 @@
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.pageArrows{
+    color: #192841;
+    font-size: 12vh;
+}
+
+.bottomOfPage{
+    position: absolute;
+    width: 100%;
+    bottom: 0.25em;
+}
+
+#landingPage{
+    background-color: white;
+}
+
+body{
+    height: 100%;
+}
+
+#reactBody{
+    transition: all 0.2s;
+    height: 100%;
+}
+
+.bodyExpand{
+    padding-left: 20%;
+}
+
+.bodyMin{
+    padding-left: 6em;
+}
+
+.allPages{
+    text-align: center;
+    height: 100vh;
+    transition: all 2s smooth;
+}
+
+@media screen and (max-width: 700px) {
+    .bodyExpand{
+        padding-left: 4em;
+    }
+
+    .bodyMin{
+        padding-left: 4em;
+    }
+
+    .allPages{
+        width: 95%;
+    }
+}

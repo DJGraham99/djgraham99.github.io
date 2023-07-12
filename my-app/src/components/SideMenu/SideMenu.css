@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.navStyleExpand{
+    min-width: 12em;
+    width: 20%;
+}
+
+.navStyleMin{
+    width: 4vw;
+    min-width: 3em;
+}
+
+#navID{
+    padding: 0.5em 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s;
+    z-index: 2;
+    background-color: #192841;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: stretch;
+    overflow: hidden;
+}
+
+.sectionLabel{
+    display: none;
+    position: absolute;
+    left: 4.5em;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: black solid 2px;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+}
+
+#externalLinks{
+    border-top: white solid 4px;
+    width: 80%;
+    margin: auto;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionLabel h5{
+    margin: 0;
+}
+
+nav a{
+    width: 90%;
+    margin: auto;
+}
+
+nav li{
+    color: white;
+    display: grid;
+    margin: 0.5vh auto;
+    height: auto;
+    min-height: 5vh;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    border: grey solid 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.expandLabel{
+    color: white;
+}
+
+.expandMenu{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.highlightedNavComp{
+    color: black;
+    border: white solid 3px;
+    background-color: white;
+}
+
+nav li:hover{
+    border: white solid 3px;
+}
+
+nav:hover{
+    overflow: hidden;
+}
+
+.textOptions{
+    display: block !important;
+    float: right;
+    color: green;
+}
+
+.expandID{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.divdiv{
+    width: 100%;
+    height: 100%;
+}
+
+h5{
+    margin: 0;
+    transition: all 0.2s;
+    display: inline-block;
+    position: relative;
+}
+
+.sideIcon{
+    font-size: 3.5vh;
+    float: left;
+    width: 20%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sideIconMin{
+    font-size: 3.5vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sideNavTitle{
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+    color: white;
+    align-self: flex-end;
+}
+
+.sideTitle{
+    float: right;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    margin-right: 1em;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width: 700px) {
+
+    .sideIcon, .sideIconMin{
+        font-size: 5vw;
+    }
+    .sideTitle, .side{
+        font-size: 4vw;
+    }
+
+    .navStyleMin{
+        min-width: 4em;
+    }
+    
+}
+
+
+@media screen and (min-height: 1000px) {
+    
+    .sideNavTitle, .side, .sideTitle{
+        font-size: 22px;
+    }
+    
+    .sideIcon, .sideIconMin{
+        font-size: 26px;
+    }
+    
+    .navStyleMin{
+        min-width: 4em;
+    }
+}
+
+
+.importantDisplay{
+    opacity: 100% !important;
+}
+
+.sectionLabel{
+    display: none;
+}
+
+.displayNone{
+    display: none;
+}

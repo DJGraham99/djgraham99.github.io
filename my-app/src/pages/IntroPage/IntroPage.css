@@ -1,0 +1,19 @@
+body{
+    background-color: whitesmoke;
+}
+
+.allPages{
+    height: 100vh;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.topOfPageTitle{
+    position: relative;
+    top: 1em;
+    font-size: 5vh;
+}
