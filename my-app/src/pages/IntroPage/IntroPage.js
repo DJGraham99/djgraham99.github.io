@@ -5,16 +5,16 @@ import { FaAngleUp } from 'react-icons/fa6';
 const IntroPage = (props) => {
 
     function useChangeMenuStyle(){
-        window.scrollTo(0,1);
+        window.scrollBy(0,1);
         setTimeout(()=>{
             props.setLandVis("")
-        }, 100);
-        setTimeout(()=>{
-            props.ScrollLandView();
         }, 200);
         setTimeout(()=>{
+            props.ScrollLandView();
+        }, 300);
+        setTimeout(()=>{
             props.setMainVis("displayNone");
-        }, 800);
+        }, 900);
     }
 
 

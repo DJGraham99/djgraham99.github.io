@@ -3,27 +3,164 @@ html{
     scroll-behavior: smooth;
 }
 
+p{
+    font-size: 18px;
+}
+
+.flexEnd{
+    align-self: flex-end;
+    text-align: center;
+}
+
+
+#landingPage{
+    overflow: hidden;
+    width: 100%;
+    background-image: url("../../images/plantBackground.jpg");
+    background-size: contain;
+}
+
+#titleDiv{
+    position: relative;
+    height: 20%;
+    margin-top: 40vh;
+    border-right: solid 2px  #192841;
+}
+
+#picRow{
+    position: relative;
+    top: 2em;
+}
+
+#aboutInfo{
+    position: relative;
+    top: -2.2em;
+    width: 80%;
+    margin: auto;
+    margin-top: 5vh;
+}
+/* 
+.tagger{
+    -webkit-filter: drop-shadow(2px 2px 2px #666666);
+    filter: drop-shadow(2px 2px 2px #666666);
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    border-radius: 5px;
+    border: black solid 2px;
+    width: auto;
+    opacity: 60%;
+}
+
+
+
+.tagger{
+    animation: tagger 1s linear infinite alternate;
+} */
+/* 
+@keyframes tagger {
+    0%{
+        transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
+  }
+
+
+#textOverlay{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    /* overflow: hidden; */
+
+    #topTitles{
+        padding-bottom: 2em;
+          -webkit-filter: drop-shadow(2px 2px 2px #666666);
+    filter: drop-shadow(2px 2px 2px #666666);
+    }
+
+
+#exploreText{
+    position: relative;
+    z-index: 5;
+    margin-top: 0;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #666666);
+}
+
+#exploreText, .pageArrows{
+        cursor: pointer;
+}
+
+.bottomOfPage h2{
+    width: 40%;
+    margin: auto;
+}
+
+#aboutInfoRow{
+    z-index: 2;
+    align-self: center;
+}
+
+#profilePic{
+    overflow: hidden;
+    width: 35%;
+    margin: auto;
+    position: relative;
+    top: 1em;
+    z-index: 1;
+}
+
+#lloydsLogo{
+    width: 13em;
+}
+
+#blurb{
+    position: relative;
+    border-top: black solid 2px;
+    z-index: 2;
+    background-color: white;
+    height: 3em;
+    width: 80%;
+    margin: auto;
+}
+
+#profilePic img{
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(5px 5px 5px #666666);
+}
+
+
+
 .pageArrows{
     color: #192841;
-    font-size: 12vh;
+    font-size: 8vh;
+    -webkit-filter: drop-shadow(5px 5px 5px #666666);
+    filter: drop-shadow(5px 5px 5px #666666);
+    margin: 0;
 }
 
 .bottomOfPage{
     position: absolute;
     width: 100%;
-    bottom: 0.25em;
+    bottom: 7%;
 }
 
-#landingPage{
-    background-color: white;
-}
 
 body{
     height: 100%;
+    transition: all 0.5s;
 }
 
+
+
 #reactBody{
-    transition: all 0.2s;
+    transition: all 0.5s;
     height: 100%;
 }
 
@@ -32,7 +169,7 @@ body{
 }
 
 .bodyMin{
-    padding-left: 6em;
+    padding-left: 3em;
 }
 
 .allPages{
@@ -44,6 +181,10 @@ body{
 @media screen and (max-width: 700px) {
     .bodyExpand{
         padding-left: 4em;
+    }
+
+    #landingPage{
+        background-size: cover;
     }
 
     .bodyMin{

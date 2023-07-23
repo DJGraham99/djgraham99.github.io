@@ -5,6 +5,9 @@ import {
     FaBars, FaFolderOpen, FaHouseChimney, FaAddressCard, FaGithub, FaGraduationCap, FaChartColumn, FaLinkedin, FaPersonHiking,
     FaLaptopCode
 } from "react-icons/fa6";
+
+import shelfI from "../../images/shelfE.png";
+import beam from "../../images/woodBeam2.png";
 const SideMenu = (props) => {
 
     const [icon, setIcon] = useState("sideIcon");
@@ -12,16 +15,19 @@ const SideMenu = (props) => {
     const [iconHead, setIconHead] = useState("sideTitle");
     const [sectionTitle, setSectionTitle] = useState(); //Minimise the navigation
     const [style, setStyle] = useState("navStyleExpand");
+    const [plant, setPlant] = useState("plant")
     const doNothing = () => {
         return;
     }
     const changeMenuStyle = () => {
         if (style == "navStyleExpand") {
+            setPlant("");
             setStyle("navStyleMin")
             setIconHead("displayNone");
             setIcon("sideIconMin")
             props.setBodyWidth("bodyMin")
             setSectionTitle("displayNone")
+            
         }
         else {
             setStyle("navStyleExpand")
@@ -29,6 +35,7 @@ const SideMenu = (props) => {
             setIcon("sideIcon")
             props.setBodyWidth("bodyExpand")
             setSectionTitle("")
+            setPlant("plant")
         }
     }
     var aboutCurrentlyVisible = props.introVisible ? "highlightedNavComp" : "";
@@ -37,9 +44,17 @@ const SideMenu = (props) => {
 
     
     return (
-        <nav id="navID" className={style}>
+        <nav id="navID" className={style + " " + plant}>
+            <img className='beam1 beam' src={beam}>
+            </img>
+            {/* <img className='beam2 beam' src={beam}>
+            </img>
+            <img className='beam3 beam' src={beam}>
+            </img>
+            <img className='beam4 beam' src={beam}>
+            </img> */}
             {SideNav("Minimise", <FaBars></FaBars>, changeMenuStyle, iconHead, icon, '')}
-            <h5 className={sectionTitle+ " sideNavTitle"}>Sections: </h5>
+            <h5 className={sectionTitle+ " sideNavTitle"}><strong>Sections:</strong> </h5>
             {SideNav("Home", <FaHouseChimney></FaHouseChimney>, doNothing, iconHead, icon, landCurrentlyVisible)}
             {SideNav("About", <FaPersonHiking></FaPersonHiking>, doNothing, iconHead, icon, aboutCurrentlyVisible, "#introPage")}
             {SideNav("Skills", <FaChartColumn></FaChartColumn>, doNothing, iconHead, icon, skillsCurrentlyVisible, "#skillsPage")}
@@ -48,7 +63,7 @@ const SideMenu = (props) => {
             {SideNav("Work & Volunteering", <FaLaptopCode></FaLaptopCode>, doNothing, iconHead, icon, '')}
             {SideNav("Contact Information", <FaAddressCard></FaAddressCard>, doNothing, iconHead, icon, '')}
 
-            <h5 className={sectionTitle+ " sideNavTitle"}> External links:</h5>
+            <h5 className={sectionTitle+ " sideNavTitle"}> <strong>External links:</strong></h5>
             {SideNav("Linkedin", <FaLinkedin></FaLinkedin>, doNothing, iconHead, icon, '')}
             {SideNav("Github", <FaGithub></FaGithub>, doNothing, iconHead, icon, '')}
         </nav>
@@ -57,6 +72,7 @@ const SideMenu = (props) => {
 
 const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) => {
     return(
+        <div>
         <a href={location}>
             <li onClick={action} id='expander' className={isVisible + " hoverID hoverIcon"}>
                 <div className='divdiv'>
@@ -68,6 +84,10 @@ const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) =>
                 </div>
             </li>
         </a>
+        <div className='shelfDiv'>
+        <img src={shelfI}></img>
+        </div>
+        </div>
     )
 }
 export default SideMenu;

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navStyleExpand{
     min-width: 12em;
     width: 20%;
@@ -10,21 +14,56 @@
     min-width: 3em;
 }
 
+.beam{
+    position: absolute;
+    height: 120%;
+    width: 0.7em;
+    top: -5em;
+}
+
+.beam1{
+    right: -0.7em;
+    opacity: 80%;
+    border-right: solid 2px black;
+    border-left: solid 2px black;
+}
+
+/* .beam2{ 
+    left: 0;
+    border-right: solid 1px black;
+}
+
+.beam3{
+    right: 15%;
+    rotate:5deg;
+} */
+
+.plant{
+    /* background-image: url("../../images/hangingPlant2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
 #navID{
-    padding: 0.5em 0;
+    background-color: #accb9b65;
+    /* #accb9b93; */
+       /* background-color: #013220e1; */
+       /* bfd8b8 */
+       /* #042519bc */
+
+    padding: 0.5em 0.3em;
     font-family: "Montserrat", sans-serif;
     transition: all 0.5s;
     z-index: 2;
-    background-color: #192841;
     position: fixed;
-    left: 0;
+    left: 0em;
     top: 0;
     height: 100vh;
     max-height: 100vh;
     display: grid;
     grid-template-columns: auto;
     justify-content: stretch;
-    overflow: hidden;
 }
 
 .sectionLabel{
@@ -53,27 +92,53 @@ nav ul{
     justify-content: center;
 }
 
+.shelfI{
+    width: 100%;
+}
+
 .sectionLabel h5{
     margin: 0;
 }
 
 nav a{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
+.shelfDiv{
+    position: relative;
+    top: -0.3em;
+    height: 0;
+    -webkit-filter: drop-shadow(-4px 3px 1px black);
+    filter: drop-shadow(-4px 3px 1px black);
+}
+
+nav img{
+    position: relative;
+    width: 100%;
+    height: 3em;
+}
+
 nav li{
-    color: white;
+    /* background-image: url("../../images/shelfE.png");
+    background-size: cover; */
     display: grid;
     margin: 0.5vh auto;
     height: auto;
     min-height: 5vh;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     align-items: center;
-    border: grey solid 2px;
+    background-color: white;
     position: relative;
     overflow: hidden;
+    border: #013220 3px solid;
+    color: #013220;
+    -webkit-filter: drop-shadow(-4px 3px 1px black);
+    filter: drop-shadow(-1px 1px 1px black);
+    z-index: 6;
+    /* background-color: rgba(115, 63, 37, 0.535); */
+    /* border: #013220 solid 3px; */
 }
 
 .expandLabel{
@@ -87,18 +152,20 @@ nav li{
 }
 
 .highlightedNavComp{
-    color: black;
-    border: white solid 3px;
-    background-color: white;
+    color: white;
+    background-color: #013220;
+    border: black solid 3px;
 }
 
 nav li:hover{
-    border: white solid 3px;
+    color: white;
+    background-color: #013220;
+    border: black solid 3px;
 }
 
-nav:hover{
+/* nav:hover{
     overflow: hidden;
-}
+} */
 
 .textOptions{
     display: block !important;
@@ -129,23 +196,25 @@ h5{
     float: left;
     width: 20%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+.sideIcon svg{
+    -webkit-filter: drop-shadow(1px 1px 1px black);
+    filter: drop-shadow(1px 1px 1px black);
 }
 
 .sideIconMin{
     font-size: 3.5vh;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  
 }
 
 .sideNavTitle{
     width: 100%;
     font-size: 2vh;
     text-align: center;
-    color: white;
     align-self: flex-end;
+    color: black;
 }
 
 .sideTitle{
@@ -156,16 +225,16 @@ h5{
     transform: translateY(-50%);
     text-align: right;
     margin-right: 1em;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 @media screen and (max-width: 700px) {
 
     .sideIcon, .sideIconMin{
-        font-size: 5vw;
+        font-size: 2vh;
     }
     .sideTitle, .side{
-        font-size: 4vw;
+        font-size: 2vh;
     }
 
     .navStyleMin{
@@ -200,5 +269,5 @@ h5{
 }
 
 .displayNone{
-    display: none;
+    display: none !important;
 }

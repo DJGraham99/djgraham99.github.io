@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 import SideMenu from './components/SideMenu/SideMenu';
 import LandingPage from './pages/LandingPage/LandingPage';
@@ -52,6 +53,7 @@ function App() {
   return (
     <div className="App">
       <header>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       </header>
       <body id="reactBody" className={bodyWidth}>
 
