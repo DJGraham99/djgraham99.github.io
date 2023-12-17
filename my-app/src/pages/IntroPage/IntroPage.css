@@ -13,3 +13,43 @@
     top: 1em;
     font-size: 5vh;
 }
+/* 
+.borderBottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 4;
+    height: 6vh;
+    background-size: contain;
+    background-image: url("../../images/backgroundBottom.jpg");
+} */
+
+.profilePic img{
+    width: 100%;
+    position: relative;
+}
+
+.window{
+    width: 60%;
+    left: 40%;
+    height: auto;
+    position: relative;
+    z-index: 6;
+}
+
+.window img{
+    width: 100%;
+    
+}
+
+.insideWindow{
+    background-color: #accb9b65;
+    margin: 10% 15%;
+    width: 70%;
+    height: 80%;
+    z-index: -1;
+    position: absolute;
+    background-image: url('../../images/mePng.png');
+    background-size: contain;
+}

@@ -15,18 +15,20 @@ const SideMenu = (props) => {
     const [iconHead, setIconHead] = useState("sideTitle");
     const [sectionTitle, setSectionTitle] = useState(); //Minimise the navigation
     const [style, setStyle] = useState("navStyleExpand");
-    const [plant, setPlant] = useState("plant")
     const doNothing = () => {
         return;
     }
     const changeMenuStyle = () => {
         if (style == "navStyleExpand") {
-            setPlant("");
             setStyle("navStyleMin")
             setIconHead("displayNone");
             setIcon("sideIconMin")
             props.setBodyWidth("bodyMin")
             setSectionTitle("displayNone")
+            const shelf = document.getElementsByClassName("shelf");
+            for (var i=0; i<shelf.length; i++){
+                shelf[i].classList.add("shelfVis")
+            }
             
         }
         else {
@@ -35,7 +37,11 @@ const SideMenu = (props) => {
             setIcon("sideIcon")
             props.setBodyWidth("bodyExpand")
             setSectionTitle("")
-            setPlant("plant")
+            const shelf = document.getElementsByClassName("shelf");
+            for (var i=0; i<shelf.length; i++){
+                shelf[i].classList.remove("shelfVis")
+            }
+        
         }
     }
     var aboutCurrentlyVisible = props.introVisible ? "highlightedNavComp" : "";
@@ -44,33 +50,29 @@ const SideMenu = (props) => {
 
     
     return (
-        <nav id="navID" className={style + " " + plant}>
+        <nav id="navID" className={style}>
             <img className='beam1 beam' src={beam}>
             </img>
-            {/* <img className='beam2 beam' src={beam}>
-            </img>
-            <img className='beam3 beam' src={beam}>
-            </img>
-            <img className='beam4 beam' src={beam}>
-            </img> */}
-            {SideNav("Minimise", <FaBars></FaBars>, changeMenuStyle, iconHead, icon, '')}
+            <div className='insideNav'>
+            {SideNav("Minimise", <FaBars></FaBars>, changeMenuStyle, iconHead, icon, '', )}
             <h5 className={sectionTitle+ " sideNavTitle"}><strong>Sections:</strong> </h5>
-            {SideNav("Home", <FaHouseChimney></FaHouseChimney>, doNothing, iconHead, icon, landCurrentlyVisible)}
-            {SideNav("About", <FaPersonHiking></FaPersonHiking>, doNothing, iconHead, icon, aboutCurrentlyVisible, "#introPage")}
-            {SideNav("Skills", <FaChartColumn></FaChartColumn>, doNothing, iconHead, icon, skillsCurrentlyVisible, "#skillsPage")}
-            {SideNav("Portfolio", <FaFolderOpen></FaFolderOpen>, doNothing, iconHead, icon, '')}
-            {SideNav("Education", <FaGraduationCap></FaGraduationCap>, doNothing, iconHead, icon, '')}
-            {SideNav("Work & Volunteering", <FaLaptopCode></FaLaptopCode>, doNothing, iconHead, icon, '')}
-            {SideNav("Contact Information", <FaAddressCard></FaAddressCard>, doNothing, iconHead, icon, '')}
+            {SideNav("Home", <FaHouseChimney></FaHouseChimney>, doNothing, iconHead, icon, landCurrentlyVisible, )}
+            {SideNav("About", <FaPersonHiking></FaPersonHiking>, doNothing, iconHead, icon, aboutCurrentlyVisible, "#introPage", )}
+            {SideNav("Skills", <FaChartColumn></FaChartColumn>, doNothing, iconHead, icon, skillsCurrentlyVisible, "#skillsPage", )}
+            {SideNav("Portfolio", <FaFolderOpen></FaFolderOpen>, doNothing, iconHead, icon, '', )}
+            {SideNav("Education", <FaGraduationCap></FaGraduationCap>, doNothing, iconHead, icon, '', )}
+            {SideNav("Work & Volunteering", <FaLaptopCode></FaLaptopCode>, doNothing, iconHead, icon, '', )}
+            {SideNav("Contact Information", <FaAddressCard></FaAddressCard>, doNothing, iconHead, icon, '', )}
 
             <h5 className={sectionTitle+ " sideNavTitle"}> <strong>External links:</strong></h5>
             {SideNav("Linkedin", <FaLinkedin></FaLinkedin>, doNothing, iconHead, icon, '')}
             {SideNav("Github", <FaGithub></FaGithub>, doNothing, iconHead, icon, '')}
+            </div>
         </nav>
         )
 }
 
-const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) => {
+const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location, ) => {
     return(
         <div>
         <a href={location}>
@@ -84,8 +86,8 @@ const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) =>
                 </div>
             </li>
         </a>
-        <div className='shelfDiv'>
-        <img src={shelfI}></img>
+        <div className="shelfDiv shelfShadow">
+        <img className="shelf" src={shelfI}></img>
         </div>
         </div>
     )

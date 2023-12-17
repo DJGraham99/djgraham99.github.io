@@ -28,6 +28,13 @@ body{
     border-left: solid 2px black;
 }
 
+.insideNav{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: stretch;
+}
+
 /* .beam2{ 
     left: 0;
     border-right: solid 1px black;
@@ -38,12 +45,6 @@ body{
     rotate:5deg;
 } */
 
-.plant{
-    /* background-image: url("../../images/hangingPlant2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-}
 
 #navID{
     background-color: #accb9b65;
@@ -51,7 +52,6 @@ body{
        /* background-color: #013220e1; */
        /* bfd8b8 */
        /* #042519bc */
-
     padding: 0.5em 0.3em;
     font-family: "Montserrat", sans-serif;
     transition: all 0.5s;
@@ -109,8 +109,15 @@ nav a{
     position: relative;
     top: -0.3em;
     height: 0;
+}
+
+.shelfShadow{
     -webkit-filter: drop-shadow(-4px 3px 1px black);
     filter: drop-shadow(-4px 3px 1px black);
+}
+
+.shelfVis{
+    display: none;
 }
 
 nav img{
@@ -186,7 +193,6 @@ nav li:hover{
 
 h5{
     margin: 0;
-    transition: all 0.2s;
     display: inline-block;
     position: relative;
 }
