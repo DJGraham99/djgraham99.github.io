@@ -1,0 +1,40 @@
+.tagger{
+    box-shadow: black 2px 2px;
+    margin: 2px;
+    padding: 2px;
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: black solid 2px;
+    width: auto;
+    opacity: 80%;
+}
+
+.tagWrap{
+    display: inline-block;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.tagger{
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    padding: 0 0.3em;
+}
+
+.tagger:hover{
+    background-color: #013220;
+    color: white;
+}
+
+#educationContainer{
+    text-align: left;
+}
+
+.tagRow{
+    text-align: left;
+}
+
+.tagRow ul{
+    list-style-type: circle;
+}

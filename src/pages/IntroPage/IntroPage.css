@@ -1,55 +1,71 @@
 
 .allPages{
-    height: 100vh;  
-    width: 80%;
+    transition: all 1s;
+    /* scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 100vh; */
+}
+
+#picRow{
+    margin: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.allPages section{
+    width: 100%;
     margin: auto;
     position: relative;
-    overflow: hidden;
-    transition: all 1s;
 }
 
 .topOfPageTitle{
+    color: white;
     position: relative;
     top: 1em;
     font-size: 5vh;
 }
-/* 
-.borderBottom{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    z-index: 4;
-    height: 6vh;
-    background-size: contain;
-    background-image: url("../../images/backgroundBottom.jpg");
-} */
 
 .profilePic img{
     width: 100%;
     position: relative;
 }
 
-.window{
-    width: 60%;
-    left: 40%;
-    height: auto;
-    position: relative;
-    z-index: 6;
-}
-
-.window img{
-    width: 100%;
-    
-}
-
-.insideWindow{
-    background-color: #accb9b65;
-    margin: 10% 15%;
-    width: 70%;
-    height: 80%;
-    z-index: -1;
+.circleImg{
     position: absolute;
-    background-image: url('../../images/mePng.png');
-    background-size: contain;
+    top: 1vh;
+    background-color: white;
+    overflow: hidden;
+    border: black solid 2px;
+    border-radius: 100px;
+    width: 25vh;
+    height: 25vh;
+}
+
+#catPic {
+    transform: rotate(5deg);
+}
+
+#introContainer .row {
+    margin-bottom: 2em;
+}
+
+.circleImg img{
+    width: 100%;
+    position: relative;
+    left: 15%;
+}
+
+
+.restOfIntro{
+    position: relative;
+    top: 35vh;
+}
+
+.photoContainer {
+    position: relative;
+    /* top: -5vh; */
+   margin: auto;
+    width: 70%;
+   
 }

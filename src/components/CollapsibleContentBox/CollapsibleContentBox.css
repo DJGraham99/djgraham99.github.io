@@ -1,0 +1,55 @@
+.boxContent {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-top: none;
+    background-color: white;
+    text-align: left;
+    padding: 0 1em;
+  }
+  
+  .header {
+    align-items: center;
+    border: #013220 solid 1px;
+    padding: 0.5em 1em;
+    background-color: white;
+    text-align: left;
+    position: relative;
+    display: grid;
+    border-radius: 5px;
+  }
+  
+  .header .description {
+    flex: 1;
+  }
+
+  .description{
+    font-size: 110%;
+    font-weight: 19900;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 1em;
+    width: 2em;
+    height: 2em;
+    transition: transform 0.3s;
+  }
+  
+  .boxContent {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .collapsed .boxContent {
+    height: 0;
+  }
+  
+  .expanded .boxContent {
+    height: auto;
+  }
+
+  .expanded .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s linear;
+  }
+  

@@ -1,0 +1,49 @@
+.contactInfoDiv, .contactInfoDiv p{
+    text-align: center;
+}
+
+.contactInfoDiv{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+#emailInput, #messageInput{
+    width: 100%;
+}
+
+#emailInput input, #messageInput textarea{
+    border: black solid 2px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#emailbtn{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#emailbtn:hover{
+    transition: all 0.3s;
+    background-color: #013220;
+    color: white;
+}
+
+#messageInput textarea{
+    height: 10em;
+}
+
+.contactTitle{
+    width: 100%;
+    position: absolute;
+    top: 8%;
+}
+
+.contactInfoColour{
+    padding: 2em;
+    border-radius: 20px;
+    background-color: white;
+    border: #013220 solid 2px;
+}

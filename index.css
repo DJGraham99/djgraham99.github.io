@@ -1,9 +1,12 @@
 
-html {
+:root {
+    /* height: 100vh; */
     scroll-behavior: smooth;
+    overflow-y: hidden;
+    /* animation: all 2s smooth; */
 }
-
 body{
+    overflow-y: hidden;
     transition: all 0.5s;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -126,7 +129,6 @@ nav li{
     width: 100%;
     color: white;
     display: grid;
-    margin: 1em auto;
     height: 3em;
     text-align: center;
     border-radius: 10px;

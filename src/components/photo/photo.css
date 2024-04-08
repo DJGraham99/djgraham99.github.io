@@ -1,0 +1,33 @@
+.imgContainer {
+    padding: 1em 1em 0em 1em;
+    width: 70%;
+    min-width: 10em;
+    margin: auto;
+    background-color: white;
+    box-shadow: -2px 3px 1px grey;
+}
+
+.imgContainer .photoImg{
+    background-color: darkgray;
+    width: 100%;
+    border: black solid 1px;
+}
+
+.pin {
+    width: 10%;
+    position: relative;
+    bottom: 1em;
+    left: 0.3em;
+}
+
+.textContainer{
+    padding: 1em 0.5vw;
+    min-height: 2em;
+        font-family: "Permanent Marker", cursive;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.textContainer p{
+    font-size: 150%;
+}
