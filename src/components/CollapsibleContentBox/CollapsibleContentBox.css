@@ -18,6 +18,12 @@
     border-radius: 5px;
   }
   
+
+  .header:hover{
+    cursor: pointer;
+  }
+
+
   .header .description {
     flex: 1;
   }

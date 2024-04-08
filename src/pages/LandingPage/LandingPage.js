@@ -60,7 +60,7 @@ const LandingPage = (props) => {
                         <div className='row'>
                             <div className='col-6 linkContainer'>
                                 {LinkBox("Education", "#educationPage", "five", <FaGraduationCap></FaGraduationCap>)}
-                                {LinkBox("Contact me", "#introPage", "six", <FaAddressCard></FaAddressCard>)}
+                                {LinkBox("Contact me", "#contactPage", "six", <FaAddressCard></FaAddressCard>)}
                             </div>
                             <div className='col-6 linkContainer'>
                                 {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)}

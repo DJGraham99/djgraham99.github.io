@@ -28,14 +28,13 @@ const SideMenu = (props) => {
             setIcon("sideIconMin")
             props.setBodyWidth("bodyMin")
             setSectionTitle("displayNone")
-            const shelf = document.getElementsByClassName("shelf");
-            for (var i = 0; i < shelf.length; i++) {
-                shelf[i].classList.add("shelfVis")
-            }
-            setTimeout(function() {
-                // Your code to be executed after 200ms goes here
-                setStyle("navStyleMin navStyleMinHiddenLabel");
-            }, 300); 
+            // const shelf = document.getElementsByClassName("shelf");
+            // for (var i = 0; i < shelf.length; i++) {
+            //     shelf[i].classList.add("shelfVis")
+            // }
+            // setTimeout(function() {
+            //     setStyle("navStyleMin navStyleMinHiddenLabel");
+            // }, 300); 
 
         }
         else {
@@ -44,15 +43,15 @@ const SideMenu = (props) => {
             setIcon("sideIcon")
             props.setBodyWidth("bodyExpand")
             setSectionTitle("")
-            const shelf = document.getElementsByClassName("shelf");
-            for (var i = 0; i < shelf.length; i++) {
-                shelf[i].classList.remove("shelfVis")
-            }
+            // const shelf = document.getElementsByClassName("shelf");
+            // for (var i = 0; i < shelf.length; i++) {
+            //     shelf[i].classList.remove("shelfVis")
+            // }
 
         }
     }
     var aboutCurrentlyVisible = props.introVisible ? "highlightedNavComp" : "";
-    var skillsCurrentlyVisible = props.skillsVisible ? "highlightedNavComp" : "";
+    // var skillsCurrentlyVisible = props.skillsVisible ? "highlightedNavComp" : "";
     var landCurrentlyVisible = props.landVisible ? "highlightedNavComp" : "";
     var portfolioCurrentlyVisible = props.portfolioVisible ? "highlightedNavComp" : "";
     var educationCurrentlyVisible = props.educationVisible ? "highlightedNavComp" : "";
@@ -73,8 +72,8 @@ const SideMenu = (props) => {
                 {SideNav("Work & Volunteering", <FaHeadset></FaHeadset>, doNothing, iconHead, icon, workCurrentlyVisible, '#workPage')}
                 {SideNav("Contact Information", <FaAddressCard></FaAddressCard>, doNothing, iconHead, icon, contactCurrentlyVisible, "#contactPage",)}
                 <hr></hr>
-                {SideNav("Linkedin", <FaLinkedin></FaLinkedin>, doNothing, iconHead, icon, '')}
-                {SideNav("Github", <FaGithub></FaGithub>, doNothing, iconHead, icon, '')}
+                {SideNav("Linkedin", <FaLinkedin></FaLinkedin>, doNothing, iconHead, icon, '', "https://www.linkedin.com/in/dylan-graham-cs/")}
+                {SideNav("Github", <FaGithub></FaGithub>, doNothing, iconHead, icon, '', "https://github.com/DJGraham99")}
             </div>
         </nav>
     )
@@ -84,7 +83,7 @@ const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) =>
 
     return (
         <div id='sideNavContainer'>
-            <a href={location} className='sideNavLink'>
+            <a href={location} target={(title==="Linkedin" || title==="Github") ? "_blank" : ""} className='sideNavLink'>
                 <div className='hiddenLabel'>
                     <h5> {title}  </h5>
                 </div>

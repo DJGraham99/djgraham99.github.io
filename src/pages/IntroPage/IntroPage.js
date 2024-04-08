@@ -67,7 +67,7 @@ const IntroPage = (props) => {
                                     </p>
 
                                 </div>
-                                <div className='col-6'>
+                                <div className='col-6' id='outsideWork'>
                                     <h5>
                                         <strong>Outside of work</strong>
                                     </h5>
