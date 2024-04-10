@@ -4,6 +4,7 @@ import { BsArrowDownSquare } from "react-icons/bs";
 import { FadeInSection } from "../../components/fadeIn.js"
 import mewithcat from '../../images/mewithcat.png'
 import { IoPersonSharp } from "react-icons/io5";
+import inProgress from "../../images/inProgress.png"
 import {
     FaHeadset, FaFire, FaAddressCard, FaGithub, FaGraduationCap, FaChartColumn, FaLinkedin, FaPersonHiking,
     FaLaptopCode
@@ -23,12 +24,13 @@ const LandingPage = (props) => {
     return (
         <div className='allPages insidePage'>
             <div className='container landingContainer'>
+                <img className='inProgress' src={inProgress}></img>
                 <div className='row' id='topTitles'>
-                    <div className='col-6' id='titleDiv'>
+                    <div className='col-sm-12 col-md-6' id='titleDiv'>
                         <h1><strong>Dylan Graham</strong> </h1>
                         <h2> CV & Portfolio </h2>
                     </div>
-                    <div className='col-6 flexEnd'>
+                    <div className='col-sm-12 col-md-6 flexEnd'>
                         <img id="lloydsLogo" src={require("../../images/LloydsLogo.png")} alt="Lloyds Logo"></img>
                     </div>
                 </div>
@@ -94,7 +96,7 @@ const LinkBox = (title, linkTo, number, icon, newTab) => {
             <a href={linkTo} target={newTab ? "_blank" : ""}>
                 <div className='innerLink'>
                 <h5 className='iconTitle'> {icon} </h5>
-                    <h5> {title} </h5>
+                    <h5 className='iconHeading'> {title} </h5>
                 </div>
             </a>
 

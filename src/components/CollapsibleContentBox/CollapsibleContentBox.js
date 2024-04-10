@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import './CollapsibleContentBox.css'; // Import CSS file for styling (see below)
+import './CollapsibleContentBox.css'; 
+import { FaChevronDown
+} from "react-icons/fa6";
 
-const CollapsibleContentBox = ({ description, secondaryDescription, defaultCollapsed, children }) => {
+const CollapsibleContentBox = ({ description, secondaryDescription, defaultCollapsed, id, children }) => {
   const [isCollapsed, setIsCollapsed] = useState(defaultCollapsed);
 
   const toggleCollapse = () => {
@@ -9,7 +11,7 @@ const CollapsibleContentBox = ({ description, secondaryDescription, defaultColla
   };
 
   return (
-    <div className={`collapsible ${isCollapsed ? 'collapsed' : 'expanded'}`}>
+    <div id={id} className={`collapsible ${isCollapsed ? 'collapsed' : 'expanded'}`}>
       <div className="header" onClick={toggleCollapse}>
         <div className="description"><strong>{description}</strong></div>
         {secondaryDescription ? <div className="secondaryDescription">{secondaryDescription}</div> : ""}

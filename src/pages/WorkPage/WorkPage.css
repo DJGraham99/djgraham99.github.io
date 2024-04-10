@@ -6,7 +6,8 @@ ul{
     text-align: left;
 }
 
-h6 {
+h6, h4, h5 {
+    display: block;
     text-align: left;
 }
 
@@ -15,10 +16,16 @@ p{
 }
 
 .lloydsContainer{
-    background-color: white;
+    padding: auto;
+    background-color: #00664f;
     border: #013220 solid 2px;
     border-radius: 5px;
-    padding: 2em;
+}
+
+.lloydsHeader{
+    background-color: #00664f;
+    color: white;
+    padding: 1em;
 }
 
 .lloydsGreen {

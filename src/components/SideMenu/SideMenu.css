@@ -274,11 +274,11 @@ hr{
     margin-right: 10%;
 }
 
-#sideNavContainer{
+.sideNavContainer{
     width: 100%;
 }
 
-#sideNavContainer a{
+.sideNavContainer a{
     border: floralwhite solid 2px;
     border-radius: 5px;
     display: grid;
@@ -313,10 +313,50 @@ hr{
         font-size: 2vh;
     }
 
+
+    hr{
+        display: none;
+    }
+
     .navStyleMin{
         min-width: 4em;
     }
     
+    #Minimise, #Expand, #Github, #Linkedin, .sideTitle{
+        display: none;
+    }
+
+    .insideNav{
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    .sideNavContainer{
+        width: 15vw;
+    }
+
+    .innerPage{
+        padding-bottom: 3em;
+    }
+
+    .sideIcon{
+        width: 100%;
+    }
+
+    #navID{
+        width: 100vw;
+        height: auto;
+        bottom: 0;
+        top: unset;
+    }
+
+    .iconHeading{
+        display: none;
+    }
+
+    .iconTitle{
+        font-size: 8vw;
+    }
 }
 
 

@@ -38,7 +38,7 @@ const IntroPage = (props) => {
                                 </div>
                             </div>
                             <div className='row'>
-                                <div className='col-6'>
+                                <div className='col-sm-12 col-md-6'>
                                     <h5>
                                         <strong>Experience Overview</strong>
                                     </h5>
@@ -67,7 +67,7 @@ const IntroPage = (props) => {
                                     </p>
 
                                 </div>
-                                <div className='col-6' id='outsideWork'>
+                                <div className='col-sm-12 col-md-6' id='outsideWork'>
                                     <h5>
                                         <strong>Outside of work</strong>
                                     </h5>
@@ -82,20 +82,6 @@ const IntroPage = (props) => {
                                         Outside of work Dylan loves the outdoors, weekends are full of hikes and trips
                                         to the sea. He has two cats called Leo & Mellow who are extremely spoiled.
                                     </p>
-
-
-                                </div>
-                            </div>
-                            <div className='row'>
-                                <div className='col-6'>
-
-
-                                </div>
-
-                                <div className='col-6'>
-
-                                    <br></br><br></br>
-
 
 
                                 </div>

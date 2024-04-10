@@ -82,7 +82,7 @@ const SideMenu = (props) => {
 const SideNav = (title, icon, action, iconHead, iconMin, isVisible, location) => {
 
     return (
-        <div id='sideNavContainer'>
+        <div className='sideNavContainer' id={title}>
             <a href={location} target={(title==="Linkedin" || title==="Github") ? "_blank" : ""} className='sideNavLink'>
                 <div className='hiddenLabel'>
                     <h5> {title}  </h5>
