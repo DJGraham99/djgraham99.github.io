@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/homepage/static/css/main.64901e85.css",
+    "main.js": "/homepage/static/js/main.d88348b3.js",
+    "static/js/787.28cb0dcd.chunk.js": "/homepage/static/js/787.28cb0dcd.chunk.js",
+    "static/media/plantBackground.jpg": "/homepage/static/media/plantBackground.595579aa57f6a19dcab6.jpg",
+    "static/media/mellowleo.jpg": "/homepage/static/media/mellowleo.2a50072443a0bb8fde81.jpg",
+    "static/media/mewithcat.png": "/homepage/static/media/mewithcat.d94473f518a0ab1ceaa2.png",
+    "static/media/individualPanelPage2.png": "/homepage/static/media/individualPanelPage2.3cf4a29ee2b2f307e2f9.png",
+    "static/media/pin.png": "/homepage/static/media/pin.9f2a87951d79e96d5bb7.png",
+    "static/media/LloydsHomeInsurance.png": "/homepage/static/media/LloydsHomeInsurance.8a0edf542ba3008af8f7.png",
+    "static/media/mePngCropped.png": "/homepage/static/media/mePngCropped.dace461e31a789b4081c.png",
+    "static/media/LloydsLogo.png": "/homepage/static/media/LloydsLogo.e4459018cec51344fd01.png",
+    "static/media/cavalloCheckout.JPG": "/homepage/static/media/cavalloCheckout.01fe9e967e25b3874d31.JPG",
+    "static/media/lerna.png": "/homepage/static/media/lerna.233ab05608049475133b.png",
+    "static/media/UGCScreen.JPG": "/homepage/static/media/UGCScreen.abfcaea4187dfc40a762.JPG",
+    "static/media/cypress.png": "/homepage/static/media/cypress.48d5544b7a940ba2c0af.png",
+    "static/media/inProgress.png": "/homepage/static/media/inProgress.3e117c7c7ce3894c03f6.png",
+    "static/media/apiimage.png": "/homepage/static/media/apiimage.520c983a55cb87c6ff42.png",
+    "static/media/logo.svg": "/homepage/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/homepage/index.html",
+    "main.64901e85.css.map": "/homepage/static/css/main.64901e85.css.map",
+    "main.d88348b3.js.map": "/homepage/static/js/main.d88348b3.js.map",
+    "787.28cb0dcd.chunk.js.map": "/homepage/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64901e85.css",
+    "static/js/main.d88348b3.js"
+  ]
+}
