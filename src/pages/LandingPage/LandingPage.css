@@ -87,23 +87,20 @@
     display: grid;
     place-content: center;
 }  */
-#linkRow{
-    width: 80%;
-    margin: auto;
-}
+
 
 .linkBox{ 
     z-index: 8;
     -webkit-filter: drop-shadow(-1px 3px 1px grey);
     filter: drop-shadow(-1px 3px 1px grey);
     background-color: floralwhite;
-    width: 100%;
+    width: 20vw;
     max-width: 8em;
     min-width: 4em;
     aspect-ratio: 1/1;
     border: black solid 2px;
     border-radius: 20px;
-    margin: 5%;
+    margin: 0.5em 1em;
     display: inline-block;
     place-content: center;
     overflow: hidden;
@@ -349,6 +346,10 @@ body{
 }
 
 @media screen and (max-width: 700px) {
+
+    .linkBox{
+        width: 15vw;
+    }
     .bodyExpand{
         padding-left: 20%;
     }

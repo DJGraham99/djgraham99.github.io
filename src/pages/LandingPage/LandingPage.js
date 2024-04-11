@@ -44,32 +44,22 @@ const LandingPage = (props) => {
 
                     </div>
                 </div>
-                <div id="linkRow" className="row">
-                    <div className='linkContainer col-6' >
-                        <div className='row'>
-                            <div className='linkContainer col-6' >
+                <div id="linkRow">
+               
                                 {LinkBox("About me", "#introPage", "one", <IoPersonSharp></IoPersonSharp>)}
                                 {/* {LinkBox("Skills", "#skillsPage", "two", <FaFire></FaFire>)} */}
-                            </div>
-                            <div className='linkContainer col-6'>
+                       
                                 {LinkBox("Portfolio", "#portfolioPage", "three", <FaLaptopCode></FaLaptopCode>)}
                                 {LinkBox("Work", "#workPage", "four", <FaHeadset></FaHeadset>)}
-                            </div>
-                        </div>
-                    </div>
                  
-                    <div className='col-6 linkContainer'>
-                        <div className='row'>
-                            <div className='col-6 linkContainer'>
+                  
                                 {LinkBox("Education", "#educationPage", "five", <FaGraduationCap></FaGraduationCap>)}
                                 {LinkBox("Contact me", "#contactPage", "six", <FaAddressCard></FaAddressCard>)}
-                            </div>
-                            <div className='col-6 linkContainer'>
-                                {/* {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)} */}
+                     
+                                {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)}
                                 {LinkBox("LinkedIn", "https://www.linkedin.com/in/dylan-graham-cs/", "eight", <FaLinkedin></FaLinkedin>, true)}
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                 </div>
                 <div>
                     <div className='col-4'></div>
