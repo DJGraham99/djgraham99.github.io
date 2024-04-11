@@ -84,6 +84,8 @@
 
 
 #linkRow {
+    position: relative;
+    bottom: 8vh;
     display: inline-block;
     justify-content: stretch;
 } 
