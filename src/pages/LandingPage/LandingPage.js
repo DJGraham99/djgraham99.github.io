@@ -23,8 +23,8 @@ const LandingPage = (props) => {
 
     return (
         <div className='allPages insidePage'>
+            <img className='inProgress' src={inProgress}></img>
             <div className='container landingContainer'>
-                <img className='inProgress' src={inProgress}></img>
                 <div className='row' id='topTitles'>
                     <div className='col-sm-12 col-md-6' id='titleDiv'>
                         <h1><strong>Dylan Graham</strong> </h1>
@@ -39,42 +39,36 @@ const LandingPage = (props) => {
                     <div className='col-12' id='aboutInfoRow'>
                         <p id='aboutInfo'>
                             Welcome to Dylan Graham's CV & Portfolio, please look around and dont hesitate to get in contact.
-                            <br></br>
                         </p>
 
                     </div>
                 </div>
-                <div id="linkRow">
-               
-                                {LinkBox("About me", "#introPage", "one", <IoPersonSharp></IoPersonSharp>)}
-                                {/* {LinkBox("Skills", "#skillsPage", "two", <FaFire></FaFire>)} */}
-                       
-                                {LinkBox("Portfolio", "#portfolioPage", "three", <FaLaptopCode></FaLaptopCode>)}
-                                {LinkBox("Work", "#workPage", "four", <FaHeadset></FaHeadset>)}
-                 
-                  
-                                {LinkBox("Education", "#educationPage", "five", <FaGraduationCap></FaGraduationCap>)}
-                                {LinkBox("Contact me", "#contactPage", "six", <FaAddressCard></FaAddressCard>)}
-                     
-                                {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)}
-                                {LinkBox("LinkedIn", "https://www.linkedin.com/in/dylan-graham-cs/", "eight", <FaLinkedin></FaLinkedin>, true)}
-                    
-                   
-                </div>
-                <div>
-                    <div className='col-4'></div>
-                    <div className='col-4'>
-                        <div className='bottomOfPage' onClick={useChangeMenuStyle} >
-                            {/* <img id="catImg" src={mewithcat}></img> */}
-                            <h4 id='exploreText'> Explore
-                            </h4>
-                        </div>
-                        <div id="bottomBlock"></div>
-                    </div>
-                    <div className='col-4'></div>
-                </div>
+            </div>
+            <div id="linkRow">
+
+                {LinkBox("About me", "#introPage", "one", <IoPersonSharp></IoPersonSharp>)}
+                {/* {LinkBox("Skills", "#skillsPage", "two", <FaFire></FaFire>)} */}
+
+                {LinkBox("Portfolio", "#portfolioPage", "three", <FaLaptopCode></FaLaptopCode>)}
+                {LinkBox("Work", "#workPage", "four", <FaHeadset></FaHeadset>)}
+
+
+                {LinkBox("Education", "#educationPage", "five", <FaGraduationCap></FaGraduationCap>)}
+                {LinkBox("Contact me", "#contactPage", "six", <FaAddressCard></FaAddressCard>)}
+
+                {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)}
+                {LinkBox("LinkedIn", "https://www.linkedin.com/in/dylan-graham-cs/", "eight", <FaLinkedin></FaLinkedin>, true)}
+
 
             </div>
+
+            <div className='bottomOfPage' onClick={useChangeMenuStyle} >
+                {/* <img id="catImg" src={mewithcat}></img> */}
+                <h4 id='exploreText'> Explore
+                </h4>
+            </div>
+            <div id="bottomBlock"></div>
+
 
         </div >
     )
@@ -85,7 +79,7 @@ const LinkBox = (title, linkTo, number, icon, newTab) => {
         <div className={'linkBox ' + number}>
             <a href={linkTo} target={newTab ? "_blank" : ""}>
                 <div className='innerLink'>
-                <h5 className='iconTitle'> {icon} </h5>
+                    <h5 className='iconTitle'> {icon} </h5>
                     <h5 className='iconHeading'> {title} </h5>
                 </div>
             </a>
