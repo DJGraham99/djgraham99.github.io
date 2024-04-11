@@ -49,7 +49,7 @@ const LandingPage = (props) => {
                         <div className='row'>
                             <div className='linkContainer col-6' >
                                 {LinkBox("About me", "#introPage", "one", <IoPersonSharp></IoPersonSharp>)}
-                                {LinkBox("Skills", "#skillsPage", "two", <FaFire></FaFire>)}
+                                {/* {LinkBox("Skills", "#skillsPage", "two", <FaFire></FaFire>)} */}
                             </div>
                             <div className='linkContainer col-6'>
                                 {LinkBox("Portfolio", "#portfolioPage", "three", <FaLaptopCode></FaLaptopCode>)}
@@ -65,7 +65,7 @@ const LandingPage = (props) => {
                                 {LinkBox("Contact me", "#contactPage", "six", <FaAddressCard></FaAddressCard>)}
                             </div>
                             <div className='col-6 linkContainer'>
-                                {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)}
+                                {/* {LinkBox("Github", "https://github.com/DJGraham99", "seven", <FaGithub></FaGithub>, true)} */}
                                 {LinkBox("LinkedIn", "https://www.linkedin.com/in/dylan-graham-cs/", "eight", <FaLinkedin></FaLinkedin>, true)}
                             </div>
                         </div>

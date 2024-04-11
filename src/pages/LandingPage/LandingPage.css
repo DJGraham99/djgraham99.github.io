@@ -363,6 +363,7 @@ body{
 
     .insidePage{
         padding: 0;
+        padding-bottom: 4em;
     }
 
     .iconTitle{
